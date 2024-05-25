@@ -1,0 +1,248 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* General */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+	font-family: "Asap", sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+
+a, button {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/* Main */
+main {
+	flex: 1;
+}
+
+/* PERRITOS */
+
+/* FIN PERRITOS */
+
+
+/* FUNDACIÓN */
+
+/* FIN FUNDACIÓN */
+
+
+/* PREGUNTAS FRECUENTES */
+
+/* FIN PREGUNTAS FRECUENTES */
+
+
+/* COLABORAR */
+
+/* FIN COLABORAR */
+
+
+/* DONAR */
+
+/* FIN DONAR*/
+
+
+/* Header y Footer */
+header, footer {
+	width: 100%;
+	background: #36BC9D;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	padding: 0 20px;
+}
+
+header a, footer a {
+	color: #ECF8F5;
+	font-family: "Dosis", sans-serif;
+}
+
+/* Header */
+header nav, header nav ul {
+	display: flex;	
+}
+
+header nav {
+    width: 100%;
+	max-width: 1200px;
+    justify-content: space-between;
+	gap: 50px;
+	font-weight: 700;
+	font-size: 1.2rem;
+	margin: 12px;
+}
+
+header nav ul {
+	width: 100%;
+	justify-content: flex-end;
+    gap: 25px;
+	align-items: center;	
+}
+
+header li a {
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+	padding: 8px 20px;
+	min-width: max-content;
+	letter-spacing: 0.03rem;
+}
+
+header li a:hover {
+	background: rgba(227, 244, 240, 0.15);
+}
+
+header li a:active {
+	background: #ECF8F5;
+	color: #42B59A;
+}
+
+.boton-destacado a {
+	color: #ffffff;
+    background: #D66FA9;
+    box-shadow: inset 0 0 0 3px #f3aed4;
+}
+
+.boton-destacado a:hover {
+	background: #42B59A;
+    box-shadow: inset 0 0 0 3px #ffffff;
+}
+
+.boton-destacado a:active {
+	background: #ECF8F5;
+	color: #42B59A;
+    box-shadow: none;
+}
+
+/* Footer */
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1200px;
+	margin: 48px 0;
+	gap: 48px;
+}
+
+.site-map {
+    flex-grow: 1;
+}
+
+.site-map ul {
+    display: flex;
+	margin-top: 18px;
+    flex-direction: column;
+    gap: 12px;
+	font-size: 1.1rem;
+	font-weight: 700;
+	letter-spacing: 0.03rem;
+}
+.site-map li:hover {
+	transform: scale(1.03);
+	transform-origin: left;
+}
+
+.info-contacto {
+    flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	text-align: right;
+	max-width: 240px;
+	gap: 14px;
+}
+.redes-sociales {
+	display: flex;
+	gap: 12px;
+}
+.redes-sociales img:hover{
+	transform: scale(1.2);
+}
+/* Formulario Footer */
+.formulario-contacto {
+    flex-grow: 1;
+	margin-top: 50px;
+}
+
+.formulario-contacto form {
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+}
+
+.formulario-contacto input, .formulario-contacto textarea {
+    margin-bottom: 12px;
+    height: 40px;
+    border: none;
+    border-radius: 14px;
+    padding: 14px;
+}
+.formulario-contacto textarea {
+	min-width: 500px;
+	max-width: 500px;
+	min-height: 60px;
+	max-height: 120px;
+}
+
+textarea#mensaje, input#nombre, input#correo {
+    font-family: "Asap", sans-serif;
+	font-size: 0.9rem;
+}
+
+::placeholder {
+  color: #434343;
+}
+
+::-ms-input-placeholder {
+  color: #434343;
+}
+
+.formulario-contacto button {
+	padding: 8px 20px;
+	border: none;
+	border-radius: 20px;
+	width: fit-content;
+	background: #D66FA9;
+	font-family: "Dosis", sans-serif;
+	font-weight: 700;
+	font-size: 1rem;
+	color: #ffffff;
+	letter-spacing: 0.03rem;
+	box-shadow: inset 0 0 0 3px #f3aed4;
+}
+
+.formulario-contacto button:hover {
+	background: #ffffff;
+	color: #36BC9D;
+	box-shadow: none;
+}
+
+.formulario-contacto button:active {
+	background: #36BC9D;
+	color: #ffffff;
+    box-shadow: inset 0 0 0 3px #ffffff;
+}
