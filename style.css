@@ -69,15 +69,15 @@ main {
 /* Header y Footer */
 header, footer {
 	width: 100%;
-	background: #36BC9D;
-	color: #ffffff;
+	background: #66dd99;
+	color: #191414;
 	display: flex;
 	justify-content: center;
 	padding: 0 20px;
 }
 
 header a, footer a {
-	color: #ECF8F5;
+	color: #191414;
 	font-family: "Dosis", sans-serif;
 }
 
@@ -113,29 +113,35 @@ header li a {
 }
 
 header li a:hover {
-	background: rgba(227, 244, 240, 0.15);
+	background: #8DF3B9;
 }
 
 header li a:active {
-	background: #ECF8F5;
-	color: #42B59A;
+	background: #66dd99;
+	color: #191414;
+    box-shadow: inset 0 0 0 2px #191414;
 }
 
 .boton-destacado a {
-	color: #ffffff;
-    background: #D66FA9;
-    box-shadow: inset 0 0 0 3px #f3aed4;
+	color: #CA358C;
+    background: #ffffff;
+    box-shadow: none;
 }
 
 .boton-destacado a:hover {
-	background: #42B59A;
-    box-shadow: inset 0 0 0 3px #ffffff;
+	background: #ffffff;
+	color: #22977B;
+	box-shadow: none;
+	transform: scale(1.03);
+	transform-origin: center;
 }
 
 .boton-destacado a:active {
-	background: #ECF8F5;
-	color: #42B59A;
-    box-shadow: none;
+	background: #66dd99;
+	color: #191414;
+    box-shadow: inset 0 0 0 2px #191414;
+	transform: scale(1.03);
+	transform-origin: center;
 }
 
 /* Footer */
@@ -180,7 +186,8 @@ header li a:active {
 	gap: 12px;
 }
 .redes-sociales img:hover{
-	transform: scale(1.2);
+	transform: scale(1.05);
+	transform-origin: center;
 }
 /* Formulario Footer */
 .formulario-contacto {
@@ -226,23 +233,27 @@ textarea#mensaje, input#nombre, input#correo {
 	border: none;
 	border-radius: 20px;
 	width: fit-content;
-	background: #D66FA9;
+	background: #ffffff;
 	font-family: "Dosis", sans-serif;
 	font-weight: 700;
 	font-size: 1rem;
-	color: #ffffff;
+	color: #E07327;
 	letter-spacing: 0.03rem;
-	box-shadow: inset 0 0 0 3px #f3aed4;
+	box-shadow: none;
 }
 
 .formulario-contacto button:hover {
 	background: #ffffff;
-	color: #36BC9D;
+	color: #22977B;
 	box-shadow: none;
+	transform: scale(1.03);
+	transform-origin: center;
 }
 
 .formulario-contacto button:active {
-	background: #36BC9D;
+	background: #66dd99;
 	color: #ffffff;
     box-shadow: inset 0 0 0 3px #ffffff;
+	transform: scale(1.03);
+	transform-origin: center;
 }
