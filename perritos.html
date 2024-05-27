@@ -2,9 +2,123 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Documento sin título</title>
+<title>Fundación Viva la Vida</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
+	<header>
+	<nav> <img src="img/logo_negro.svg" width="174.25px" height="50px" alt="Logo de Fundación Viva la Vida">
+		<ul>
+			<li><a href="/perritos.html" target="_self">Perritos</a></li>
+			<li><a href="sobre-fundacion.html" target="_self">Sobre la fundación</a></li>
+			<li><a href="/preguntas-frecuentes.html" target="_self">Preguntas frecuentes</a></li>
+			<li><a href="/colaborar.html" target="_self">Colaborar</a></li>
+			<li class="boton-destacado"><a href="/donar.html" target="_self">Donar</a></li>
+		</ul>
+	</nav>
+</header>
+	<main>
+		<img src="img/banner.svg" width="100%" alt="banner perritos"/>
+		
+		<div class="perritos_main">
+			<section class="filtro">
+				<h4>Filtros</h4>
+				
+				<article>
+					<p>Edad</p>
+						<ul>
+							<li><label>Cachorro<input type="radio" name="Edad" value="Cachorro" id="Cachorro"></label></li>
+							<li><label>Joven<input type="radio" name="Edad" value="Joven" id="Joven"></label></li>
+							<li><label>Adulto<input type="radio" name="Edad" value="Adulto" id="Adulto"></label></li>
+							<li><label>Viejito<input type="radio" name="Edad" value="Viejito" id="Viejito"></label></li>
+						</ul>		
+				</article>
+	  			
+				<article>
+					<p>Tamaño</p>
+						<ul>
+							<li><label>Pequeño<input type="radio" name="Tamaño" value="Pequeño" id="Pequeño"></label></li>
+							<li><label>Mediano<input type="radio" name="Tamaño" value="Mediano" id="Mediano"></label></li>
+							<li><label>Grande<input type="radio" name="Tamaño" value="Grande" id="Grande"></label></li>
+						</ul>		
+				</article>
+				
+				<article>
+					<p>Se lleva bien con</p>
+						<ul>
+							<li><label>Perros <input type="radio" name="Se lleva bien" value="Perros" id="Perros"></label></li>
+							<li><label>Niños <input type="radio" name="Se lleva bien" value="Niños" id="Niños"></label></li>
+							<li><label>Otros animales <input type="radio" name="Se lleva bien" value="Otros animales" id="Otros animales"></label></li>
+						</ul>		
+				</article>
+			  	
+				<article>
+					<p>Sexo</p>
+						<ul>
+							<li><label>Macho <input type="radio" name="Sexo" value="Macho" id="Macho"></label></li>
+							<li><label>Hembra <input type="radio" name="Sexo" value="Hembra" id="Hembra"></label></li>
+						</ul>		
+				</article>
+				
+	</section>
+		<section class="perfiles">
+			<img src="img/perfiles/1_perro.png" width="330px" height="330px" alt="1 perfil canino">
+			<img src="img/perfiles/2_perro.png" width="330px" height="330px" alt="2 perfil canino">
+			<img src="img/perfiles/3_fermin.png" width="330px" height="330px" alt="3 perfil canino">
+			<img src="img/perfiles/4_perro.png" width="330px" height="330px" alt="4 perfil canino">
+			<img src="img/perfiles/5_perro.png" width="330px" height="330px" alt="5 perfil canino">
+			<img src="img/perfiles/6_perro.png" width="330px" height="330px" alt="6 perfil canino">
+			<img src="img/perfiles/7_perro.png" width="330px" height="330px" alt="7 perfil canino">
+			<img src="img/perfiles/8_perro.png" width="330px" height="330px" alt="8 perfil canino">
+			<img src="img/perfiles/9_perro.png" width="330px" height="330px" alt="9 perfil canino">
+			<img src="img/perfiles/10_perro.png" width="330px" height="330px" alt="10 perfil canino">
+			<img src="img/perfiles/11_perro.png" width="330px" height="330px" alt="11 perfil canino">
+			<img src="img/perfiles/12_perro.png" width="330px" height="330px" alt="12 perfil canino">
+		</section>
+	</div>
+		
+    <img src="img/botones_perros.svg" alt=""/> 
+	
+	</main>
+	<footer>
+	<div class="footer-container">
+		<section class="site-map">
+			<nav> <img src="img/logo_negro.svg" width="174.25px" height="50px" alt="Logo de Fundación Viva la Vida">
+				<ul>
+					<li><a href="/perritos.html" target="_self">Perritos</a></li>
+					<li><a href="sobre-fundacion.html" target="_self">Sobre la fundación</a></li>
+					<li><a href="/preguntas-frecuentes.html" target="_self">Preguntas frecuentes</a></li>
+					<li><a href="/colaborar.html" target="_self">Colaborar</a></li>
+					<li><a href="/donar.html" target="_self">Donar</a></li>
+				</ul>
+			</nav>
+		</section>
+		<section class="formulario-contacto">
+			<form method="post" action="" target="_blank" enctype="text/plain">
+				<input type="text" id="nombre" name="nombre" maxlength="30" placeholder="Nombre" required>
+				<input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+				<textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+				<button type="submit">Enviar</button>
+			</form>
+		</section>
+		<section class="info-contacto">
+			<div class="redes-sociales"> <a href="#" target="_blank"><img src="img/instagram.svg" width="30px" height="30px" alt="Logo de Instagram"></a> <a href="#" target="_blank"><img src="img/facebook.svg" width="30px" height="30px" alt="Logo de Facebook"></a> <a href="#" target="_blank"><img src="img/whatsapp.svg" width="30px" height="30px" alt="Logo de WhatsApp"></a> </div>
+			<div class="datos">
+				<p>Hurlingham, Buenos Aires</p>
+				<details>
+					<summary>Alias: fundacionvivalavida</summary>
+					<p>Banco Santander Rio</p>
+					<p>Cuenta Corriente Nro. 197-5434/2</p>
+					<p>CBU 0720197020000000543422</p>
+					<p>CUIT: 30-71241612-9</p>
+				</details>
+			</div>
+		</section>
+	</div>
+</footer>
 </body>
 </html>
