@@ -47,6 +47,7 @@ a, button {
 	--azul-claro: #DCF1F2;
 	--amarillo-claro: #FBF9D6;
 	--naranja-claro: #F5C5AA;
+	--gris-claro: #434343;
 }
 
 /* Main */
@@ -233,12 +234,8 @@ textarea#mensaje, input#nombre, input#correo {
 	font-size: 0.9rem;
 }
 
-::placeholder {
-  color: #434343;
-}
-
-::-ms-input-placeholder {
-  color: #434343;
+::placeholder, ::-ms-input-placeholder {
+  color: var(--gris-claro);
 }
 
 .formulario-contacto button {
