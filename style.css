@@ -28,7 +28,7 @@ body {
 	flex-direction: column;
 }
 
-a, button {
+a, button, img {
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-ms-transition: all 0.3s ease;
@@ -156,9 +156,6 @@ footer {
 	color: var(--naranja-oscuro);
 	border-top: solid 1px var(--naranja-oscuro);
 }
-footer a{
-	color: var(--naranja-oscuro);
-}
 .footer-container {
 	display: flex;
 	justify-content: space-between;
@@ -167,7 +164,9 @@ footer a{
 	margin: 48px 0;
 	gap: 48px;
 }
-
+.site-map img{
+	margin-left: 12px;
+}
 .site-map {
     flex-grow: 1;
 }
@@ -181,11 +180,15 @@ footer a{
 	font-weight: 700;
 	letter-spacing: 0.03rem;
 }
-.site-map li:hover {
-	transform: scale(1.03);
-	transform-origin: left;
-}
 
+.site-map a{
+	color: var(--naranja-oscuro);
+	padding: 4px 12px;
+	border-radius: 5px;
+}
+.site-map a:hover{
+	background: var(--naranja-claro);
+}
 .info-contacto {
     flex-grow: 1;
 	display: flex;
@@ -197,10 +200,19 @@ footer a{
 }
 .redes-sociales {
 	display: flex;
+	align-content: center;
 	gap: 12px;
+	padding: 8px 20px;
+	background: var(--naranja-claro);
+	border-radius: 30px;
+}
+.redes-sociales a{
+	display: flex;
+    align-content: center;
+
 }
 .redes-sociales img:hover{
-	transform: scale(1.05);
+	transform: scale(1.09);
 	transform-origin: center;
 }
 /* Formulario Footer */
