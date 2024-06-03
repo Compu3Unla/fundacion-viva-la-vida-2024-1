@@ -97,8 +97,10 @@ main {
 
 #contenido-cover {
 	width: 600px;
-	height: 200px;
 	display: flex;
+	background-color: var(--amarillo);
+	border: solid 1px var(--amarillo-oscuro);
+	border-radius: 16px;
 }
 
 #contenido-cover div {
@@ -107,11 +109,8 @@ main {
 	justify-content: space-between;
 	height: 300px;
 	display: flex;
-	background-color: var(--amarillo);
 	gap: 32px;
 	padding: 24px;
-	border-radius: 16px;
-	border: solid 1px var(--amarillo-oscuro);
 }
 
 #contenido-cover div {
