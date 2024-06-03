@@ -106,7 +106,6 @@ main {
 	flex-direction: column;
 	justify-content: space-between;
 	height: 300px;
-	display: flex;
 	background-color: var(--amarillo);
 	gap: 32px;
 	padding: 24px;
