@@ -28,12 +28,26 @@ body {
 	flex-direction: column;
 }
 
-a, button {
+a, button, img {
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-ms-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
+}
+
+/* Main */
+:root {
+	--azul: #AEDEE0;
+	--amarillo: #F5F19C;
+	--naranja: #EF9D71;
+	--azul-oscuro: #004444;
+	--amarillo-oscuro: #4D4D13;
+	--naranja-oscuro: #3E120B;
+	--azul-claro: #DCF1F2;
+	--amarillo-claro: #FBF9D6;
+	--naranja-claro: #F5C5AA;
+	--gris-claro: #434343;
 }
 
 /* Main */
@@ -55,13 +69,52 @@ main {
 
 /* FIN PREGUNTAS FRECUENTES */
 
-
 /* COLABORAR */
-
 /* FIN COLABORAR */
 
 
 /* DONAR */
+header {
+	display: flex;
+	flex-direction: column;
+}
+
+.donacion {
+	display: flex;
+	margin: 0px auto;
+	padding: 154px 264px;
+	align-items: center;
+	background-color: var(--amarillo-claro);
+}
+
+.parrafodonacion {
+	max-width: 792px;
+	height: 302px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 24px;
+	margin-left: 48px;
+	font-size: 24px;
+}
+
+.botonprimario {
+	width: 360px;
+	height: 64px;
+	background-color: var(--naranja);
+	padding: 16px 48px;
+	text-align: center;
+	border-radius: 30px;
+	color: white;
+	font-family: Dosis;
+	font-size: 32px;
+	transform-origin: center;
+	padding-left: 1px;
+    padding-right: 0px;
+    padding-top: 10px;
+}
+/* OJO ACÁ: Todos los radius de nuestros botones tienen que tener un mismo valor, lo deje en 30px hasta que lo establezcamos*/
 
 /* FIN DONAR*/
 
@@ -69,19 +122,22 @@ main {
 /* Header y Footer */
 header, footer {
 	width: 100%;
-	background: #66dd99;
-	color: #191414;
 	display: flex;
 	justify-content: center;
 	padding: 0 20px;
 }
 
+
 header a, footer a {
-	color: #191414;
 	font-family: "Dosis", sans-serif;
 }
 
 /* Header */
+header {
+	background: var(--azul);
+	color: var(--azul-oscuro);
+	border-bottom: solid 1px var(--azul-oscuro);
+}
 header nav, header nav ul {
 	display: flex;	
 }
@@ -102,6 +158,9 @@ header nav ul {
     gap: 25px;
 	align-items: center;	
 }
+header a {
+	color: var(--azul-oscuro);
+}
 
 header li a {
 	display: flex;
@@ -113,38 +172,29 @@ header li a {
 }
 
 header li a:hover {
-	background: #8DF3B9;
-}
-
-header li a:active {
-	background: #66dd99;
-	color: #191414;
-    box-shadow: inset 0 0 0 2px #191414;
+	background: var(--azul-claro);
 }
 
 .boton-destacado a {
-	color: #CA358C;
-    background: #ffffff;
-    box-shadow: none;
+	color: var(--naranja-oscuro);
+    background: var(--naranja);
+    border: solid 1px var(--naranja-oscuro);
 }
 
 .boton-destacado a:hover {
-	background: #ffffff;
-	color: #22977B;
-	box-shadow: none;
-	transform: scale(1.03);
-	transform-origin: center;
-}
-
-.boton-destacado a:active {
-	background: #66dd99;
-	color: #191414;
-    box-shadow: inset 0 0 0 2px #191414;
+	background: var(--amarillo);
+	color: var(--amarillo-oscuro);
+    border: solid 1px var(--amarillo-oscuro);
 	transform: scale(1.03);
 	transform-origin: center;
 }
 
 /* Footer */
+footer {
+	background: var(--naranja);
+	color: var(--naranja-oscuro);
+	border-top: solid 1px var(--naranja-oscuro);
+}
 .footer-container {
 	display: flex;
 	justify-content: space-between;
@@ -153,7 +203,9 @@ header li a:active {
 	margin: 48px 0;
 	gap: 48px;
 }
-
+.site-map img{
+	margin-left: 12px;
+}
 .site-map {
     flex-grow: 1;
 }
@@ -167,11 +219,15 @@ header li a:active {
 	font-weight: 700;
 	letter-spacing: 0.03rem;
 }
-.site-map li:hover {
-	transform: scale(1.03);
-	transform-origin: left;
-}
 
+.site-map a{
+	color: var(--naranja-oscuro);
+	padding: 4px 12px;
+	border-radius: 5px;
+}
+.site-map a:hover{
+	background: var(--naranja-claro);
+}
 .info-contacto {
     flex-grow: 1;
 	display: flex;
@@ -183,10 +239,19 @@ header li a:active {
 }
 .redes-sociales {
 	display: flex;
+	align-content: center;
 	gap: 12px;
+	padding: 8px 20px;
+	background: var(--naranja-claro);
+	border-radius: 30px;
+}
+.redes-sociales a{
+	display: flex;
+    align-content: center;
+
 }
 .redes-sociales img:hover{
-	transform: scale(1.05);
+	transform: scale(1.09);
 	transform-origin: center;
 }
 /* Formulario Footer */
@@ -204,7 +269,7 @@ header li a:active {
 .formulario-contacto input, .formulario-contacto textarea {
     margin-bottom: 12px;
     height: 40px;
-    border: none;
+    border: 1px solid var(--amarillo-oscuro);
     border-radius: 14px;
     padding: 14px;
 }
@@ -220,12 +285,8 @@ textarea#mensaje, input#nombre, input#correo {
 	font-size: 0.9rem;
 }
 
-::placeholder {
-  color: #434343;
-}
-
-::-ms-input-placeholder {
-  color: #434343;
+::placeholder, ::-ms-input-placeholder {
+  color: var(--gris-claro);
 }
 
 .formulario-contacto button {
@@ -233,27 +294,17 @@ textarea#mensaje, input#nombre, input#correo {
 	border: none;
 	border-radius: 20px;
 	width: fit-content;
-	background: #ffffff;
+	background: var(--amarillo);
 	font-family: "Dosis", sans-serif;
 	font-weight: 700;
 	font-size: 1rem;
-	color: #E07327;
+	color: var(--amarillo-oscuro);
 	letter-spacing: 0.03rem;
-	box-shadow: none;
+	border: 1px solid var(--amarillo-oscuro);
 }
 
 .formulario-contacto button:hover {
-	background: #ffffff;
-	color: #22977B;
-	box-shadow: none;
-	transform: scale(1.03);
-	transform-origin: center;
-}
-
-.formulario-contacto button:active {
-	background: #66dd99;
-	color: #ffffff;
-    box-shadow: inset 0 0 0 3px #ffffff;
+	background: var(--amarillo-claro);
 	transform: scale(1.03);
 	transform-origin: center;
 }
