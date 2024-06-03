@@ -113,7 +113,11 @@ main {
 	flex-direction: column;
 	justify-content: space-between;
 	height: 300px;
+<<<<<<< HEAD
+	background-color: var(--amarillo);
+=======
 	display: flex;
+>>>>>>> origin/main
 	gap: 32px;
 	padding: 24px;
 }
