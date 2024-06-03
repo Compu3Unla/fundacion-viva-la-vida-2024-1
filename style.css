@@ -76,6 +76,47 @@ main {
 
 
 /* DONAR */
+header {
+	display: flex;
+	flex-direction: column;
+}
+
+.donacion {
+	display: flex;
+	margin: 0px auto;
+	padding: 154px 264px;
+	align-items: center;
+	background-color: var(--amarillo-claro);
+}
+
+.parrafodonacion {
+	max-width: 792px;
+	height: 302px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 24px;
+	margin-left: 48px;
+	font-size: 24px;
+}
+
+.botonprimario {
+	width: 360px;
+	height: 64px;
+	background-color: var(--naranja);
+	padding: 16px 48px;
+	text-align: center;
+	border-radius: 30px;
+	color: white;
+	font-family: Dosis;
+	font-size: 32px;
+	transform-origin: center;
+	padding-left: 1px;
+    	padding-right: 0px;
+    	padding-top: 10px;
+}
+/* OJO ACÁ: Todos los radius de nuestros botones tienen que tener un mismo valor, lo deje en 30px hasta que lo establezcamos*/
 
 /* FIN DONAR*/
 
