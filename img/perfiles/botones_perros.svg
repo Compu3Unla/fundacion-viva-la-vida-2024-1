@@ -1,7 +1,14 @@
-<svg width="417" height="54" viewBox="0 0 417 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.83218 30.9472C4.41212 29.0402 4.41211 24.12 7.83217 22.2131L33.8492 7.70658C37.182 5.8483 41.2842 8.25777 41.2842 12.0736L41.2842 41.0866C41.2842 44.9025 37.182 47.3119 33.8492 45.4537L7.83218 30.9472Z" fill="#D94555"/>
-<ellipse cx="127.911" cy="26.5802" rx="8.71225" ry="8.35377" fill="#D94555"/>
-<ellipse cx="209.491" cy="26.5802" rx="8.71225" ry="8.35377" fill="#D94555"/>
-<ellipse cx="291.069" cy="26.5802" rx="8.71225" ry="8.35377" fill="#D94555"/>
-<path d="M409.098 22.2059C412.536 24.109 412.536 29.0516 409.098 30.9547L384.623 44.5043C381.29 46.3491 377.201 43.939 377.201 40.1299L377.201 13.0307C377.201 9.22162 381.29 6.81145 384.623 8.65631L409.098 22.2059Z" fill="#D94555"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 417 54" style="enable-background:new 0 0 417 54;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F09E72;stroke:#3E120B;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M7.8-91.1c-3.4-1.9-3.4-6.8,0-8.7l26-14.5c3.3-1.9,7.4,0.6,7.4,4.4v29c0,3.8-4.1,6.2-7.4,4.4L7.8-91.1z"/>
+<ellipse class="st0" cx="127.9" cy="-95.4" rx="8.7" ry="8.4"/>
+<ellipse class="st0" cx="209.5" cy="-95.4" rx="8.7" ry="8.4"/>
+<ellipse class="st0" cx="291.1" cy="-95.4" rx="8.7" ry="8.4"/>
+<path class="st0" d="M409.1-99.8c3.4,1.9,3.4,6.8,0,8.7l-24.5,13.5c-3.3,1.8-7.4-0.6-7.4-4.4V-109c0-3.8,4.1-6.2,7.4-4.4L409.1-99.8
+	z"/>
 </svg>
