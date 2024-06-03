@@ -28,7 +28,7 @@ body {
 	flex-direction: column;
 }
 
-a, button {
+a, button, img {
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-ms-transition: all 0.3s ease;
@@ -67,6 +67,7 @@ a, button {
 }
 
 /* Main */
+
 :root {
 	--azul: #AEDEE0;
 	--amarillo: #F5F19C;
@@ -104,6 +105,39 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	height: 300px;
+	display: flex;
+	background-color: var(--amarillo);
+	gap: 32px;
+	padding: 24px;
+	border-radius: 16px;
+	border: solid 1px var(--amarillo-oscuro);
+}
+
+#contenido-cover div {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 32px;
+}
+
+/* #contenido-cover img {
+	border-radius: 16px;
+	border: solid 1px var(--amarillo-oscuro);
+}
+
+.icon-button img {
+	border-style: none;
+	border-color: var(--amarillo);
+} */
+
+/*le aplique el borde a la imagen de portada del calendario y se le aplico tambien al icono. Intente sacarlo aplicando del atributo none al border-style con este selector pero no funcionaa D: voy a ver como lo arreglo pero si alguien sabe genial*/
+
+#cover-article {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
 }
 
 .icon-button {
@@ -130,6 +164,127 @@ main {
 	text-align: center;
 	border-radius: 8px;
 }
+
+
+.boton-index-1 {
+	color: var(--amarillo-oscuro);
+	border: solid 1px var(--amarillo-oscuro);
+	background-color: var(--amarillo);
+}
+
+.boton-index-2 {
+	color: var(--naranja-oscuro);
+	border: solid 1px var(--naranja-oscuro);
+	background-color: var(--naranja);
+}
+
+.boton-index-3 {
+	color: var(--azul-oscuro);
+	border: solid 1px var(--azul-oscuro);
+	background-color: var(--azul);
+}
+
+#previsualizar-perritos {
+	width: 100%;
+	padding: 100px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 72px;
+}
+
+#h-de-prueba {
+	font-size: 1.8rem;
+	color: var(--amarillo-oscuro);
+}
+
+#carrousel {
+	width: 100%;
+	display: flex;
+	gap: 32px;
+	overflow-x: scroll;
+	padding: 0px 72px;
+}
+
+.item-carrousel {
+	width: 300px;
+	height: 300px;
+	border-radius: 16px;
+}
+
+.boton-primario {
+	padding: 16px 32px;
+	background-color: var(--amarillo);
+	border: solid 1px var(--amarillo-oscuro);
+	border-radius: 32px;
+	text-align: center;
+	color: var(--amarillo-oscuro);
+}
+
+#cifras-de-exito {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 32px 72px;
+	background-color: var(--azul);
+	color: var(--azul-oscuro);
+	font-size: 2rem;
+	text-align: center;
+	border-top: solid 1px var(--azul-oscuro);
+	border-bottom: solid 1px var(--azul-oscuro);
+}
+
+#sobre-la-fundacion {
+	width: 100%;
+	padding: 32px 72px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+#contenido-fundacion {
+	display: flex;
+	width: 800px;
+	height: 400px;
+	background-color: var(--amarillo);
+	border-radius: 16px;
+	border: solid 1px var(--naranja-oscuro);
+}
+
+#contenido-fundacion div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 32px 80px 32px 32px;
+	
+}
+
+#contenido-fundacion article {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+#quienes-somos-img {
+	border-radius: 16px;
+}
+
+/* ¿Porque no se aplica el radio a los vertices cuando se lo aplico al div que lo contiene? */
+
+.boton-secundario {
+	padding: 16px 32px;
+	background-color: var(--naranja);
+	border: solid 1px var(--naranja-oscuro);
+	border-radius: 32px;
+	text-align: center;
+	color: var(--naranja-oscuro);
+}
+
+/* FIN INDEX */
+
+
 
 /* PERRITOS */
 .perritos_main{
@@ -187,13 +342,52 @@ label{
 
 /* FIN PREGUNTAS FRECUENTES */
 
-
 /* COLABORAR */
-
 /* FIN COLABORAR */
 
 
 /* DONAR */
+header {
+	display: flex;
+	flex-direction: column;
+}
+
+.donacion {
+	display: flex;
+	margin: 0px auto;
+	padding: 154px 264px;
+	align-items: center;
+	background-color: var(--amarillo-claro);
+}
+
+.parrafodonacion {
+	max-width: 792px;
+	height: 302px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 24px;
+	margin-left: 48px;
+	font-size: 24px;
+}
+
+.botonprimario {
+	width: 360px;
+	height: 64px;
+	background-color: var(--naranja);
+	padding: 16px 48px;
+	text-align: center;
+	border-radius: 30px;
+	color: white;
+	font-family: Dosis;
+	font-size: 32px;
+	transform-origin: center;
+	padding-left: 1px;
+    padding-right: 0px;
+    padding-top: 10px;
+}
+/* OJO ACÁ: Todos los radius de nuestros botones tienen que tener un mismo valor, lo deje en 30px hasta que lo establezcamos*/
 
 /* FIN DONAR*/
 
@@ -208,8 +402,8 @@ header, footer {
 	padding: 0 20px;
 }
 
+
 header a, footer a {
-	color: #191414;
 	font-family: "Dosis", sans-serif;
 }
 
@@ -289,9 +483,11 @@ footer {
 	color: var(--naranja-oscuro);
 	border-top: solid 1px var(--naranja-oscuro);
 }
+
 footer a{
 	color: var(--naranja-oscuro);
 }
+
 .footer-container {
 	display: flex;
 	justify-content: space-between;
@@ -300,7 +496,9 @@ footer a{
 	margin: 48px 0;
 	gap: 48px;
 }
-
+.site-map img{
+	margin-left: 12px;
+}
 .site-map {
     flex-grow: 1;
 }
@@ -314,11 +512,15 @@ footer a{
 	font-weight: 700;
 	letter-spacing: 0.03rem;
 }
-.site-map li:hover {
-	transform: scale(1.03);
-	transform-origin: left;
-}
 
+.site-map a{
+	color: var(--naranja-oscuro);
+	padding: 4px 12px;
+	border-radius: 5px;
+}
+.site-map a:hover{
+	background: var(--naranja-claro);
+}
 .info-contacto {
     flex-grow: 1;
 	display: flex;
@@ -330,10 +532,19 @@ footer a{
 }
 .redes-sociales {
 	display: flex;
+	align-content: center;
 	gap: 12px;
+	padding: 8px 20px;
+	background: var(--naranja-claro);
+	border-radius: 30px;
+}
+.redes-sociales a{
+	display: flex;
+    align-content: center;
+
 }
 .redes-sociales img:hover{
-	transform: scale(1.05);
+	transform: scale(1.09);
 	transform-origin: center;
 }
 /* Formulario Footer */
@@ -367,12 +578,8 @@ textarea#mensaje, input#nombre, input#correo {
 	font-size: 0.9rem;
 }
 
-::placeholder {
-  color: #434343;
-}
-
-::-ms-input-placeholder {
-  color: #434343;
+::placeholder, ::-ms-input-placeholder {
+  color: var(--gris-claro);
 }
 
 .formulario-contacto button {
