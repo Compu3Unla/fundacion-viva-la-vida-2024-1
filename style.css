@@ -113,11 +113,8 @@ main {
 	flex-direction: column;
 	justify-content: space-between;
 	height: 300px;
-<<<<<<< HEAD
 	background-color: var(--amarillo);
-=======
 	display: flex;
->>>>>>> origin/main
 	gap: 32px;
 	padding: 24px;
 }
@@ -393,8 +390,8 @@ header {
 	font-size: 32px;
 	transform-origin: center;
 	padding-left: 1px;
-    	padding-right: 0px;
-    	padding-top: 10px;
+    padding-right: 0px;
+    padding-top: 10px;
 }
 /* OJO ACÁ: Todos los radius de nuestros botones tienen que tener un mismo valor, lo deje en 30px hasta que lo establezcamos*/
 
