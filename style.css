@@ -392,8 +392,6 @@ header {
     padding-right: 0px;
     padding-top: 10px;
 }
-
-/* OJO ACÁ: Todos los radius de nuestros botones tienen que tener un mismo valor, lo deje en 30px hasta que lo establezcamos*/
 /*============================*/
 
 .necesitamos {
@@ -516,6 +514,7 @@ section div p {
 	display: flex;
 	flex-direction: column;
 	background-color: var(--amarillo-claro);
+	gap: 86px;
 }
 
 .fotoytexto {
@@ -532,6 +531,32 @@ section div p {
 	justify-content: center;
 	align-items: flex-start;
 	gap: 32px;
+}
+
+.grid-container {
+	width: 1393px;
+	height: 1134px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 48px;
+}
+
+article ul li {
+	width: 426px;
+	height: 149px;
+	display: flex;
+	padding: 24px;
+	align-items: flex-start;
+	gap: 24px;
+	border-radius: 24px;
+	background-color: var(--naranja);
+	box-shadow: -10px 9px 20.9px 0px rgba(29, 47, 69, 0.30);
+}
+
+.grilla-medicamentos {
+	align-items: center;
+	margin: 0px auto;
+	margin-bottom: 96px;
 }
 
 /* FIN DONAR*/
