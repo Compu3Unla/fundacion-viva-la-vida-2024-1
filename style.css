@@ -558,6 +558,27 @@ article ul li {
 	margin: 0px auto;
 	margin-bottom: 96px;
 }
+
+.texto-medicamento {
+	font-family: Dosis;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 36px;
+	color: white;
+}
+
+.descripcion-medicamento {
+	font-family: Dosis;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+}
+
+.flex-medicamentos {
+	display: flex;
+	flex-direction: column;
+}
 /* FIN DONAR*/
 
 
