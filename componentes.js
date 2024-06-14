@@ -18,7 +18,7 @@ class customheader extends HTMLElement{
     render( ){
         this.innerHTML += ` 
         <header>
-	        <nav> <img src="img/logo_negro.svg" width="174.25px" height="50px" alt="Logo de Fundación Viva la Vida">
+	        <nav> <a href="index.html" target="_self"><img src="img/logos/logo-azul.svg" width="174.25px" height="50px" alt="Logo de Fundación Viva la Vida"></a>
 		    <ul>
 			    <li><a href="perritos.html" target="_self">Perritos</a></li>
 			    <li><a href="sobre-fundacion.html" target="_self">Sobre la fundación</a></li>
@@ -59,7 +59,7 @@ class customfooter extends HTMLElement{
         <footer>
 	        <div class="footer-container">
 		    <section class="site-map">
-			    <nav> <img src="img/logo_negro.svg" width="174.25px" height="50px" alt="Logo de Fundación Viva la Vida">
+			    <nav> <img src="img/logos/isotipo-naranja.svg" width="174.25px" height="50px" alt="Logo de Fundación Viva la Vida">
 				<ul>
 					<li><a href="/perritos.html" target="_self">Perritos</a></li>
 					<li><a href="sobre-fundacion.html" target="_self">Sobre la fundación</a></li>
@@ -78,7 +78,11 @@ class customfooter extends HTMLElement{
 			    </form>
 		    </section>
 		    <section class="info-contacto">
-			    <div class="redes-sociales"> <a href="#" target="_blank"><img src="img/instagram.svg" width="30px" height="30px" alt="Logo de Instagram"></a> <a href="#" target="_blank"><img src="img/facebook.svg" width="30px" height="30px" alt="Logo de Facebook"></a> <a href="#" target="_blank"><img src="img/whatsapp.svg" width="30px" height="30px" alt="Logo de WhatsApp"></a> </div>
+			    <div class="redes-sociales"> <a href="#" target="_blank"><img src="img/iconos/instagram.svg" width="30px" height="30px" alt="Logo de Instagram"></a>
+                
+                <a href="#" target="_blank"><img src="img/iconos/facebook.svg" width="30px" height="30px" alt="Logo de Facebook"></a>
+                
+                <a href="#" target="_blank"><img src="img/iconos/whatsapp.svg" width="30px" height="30px" alt="Logo de WhatsApp"></a> </div>
 			    <div class="datos">
 				<p>Hurlingham, Buenos Aires</p>
 				<details>
