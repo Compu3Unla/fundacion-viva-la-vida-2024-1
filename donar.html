@@ -7,223 +7,286 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+<script src="componentes.js"></script>
 </head>
 
 <body>
-    <header>
-		<nav> <img src="img/logo_negro.svg" width="174.25px" height="50px" alt="Logo de Fundación Viva la Vida">
-			<ul>
-				<li><a href="/perritos.html" target="_self">Perritos</a></li>
-				<li><a href="sobre-fundacion.html" target="_self">Sobre la fundación</a></li>
-				<li><a href="/preguntas-frecuentes.html" target="_self">Preguntas frecuentes</a></li>
-				<li><a href="/colaborar.html" target="_self">Colaborar</a></li>
-				<li class="boton-destacado"><a href="/donar.html" target="_self">Donar</a></li>
-			</ul>
-		</nav>
-		<img src="img/img_donar/Banner_donar.svg" alt="Banner de la página donar imagen temporal">
-    </header>
+    <custom-header></custom-header>
+
     <main>
         <section class="donacion">
             <img src="img/img_donar/perrito_donar_section1.png" alt="caricia al perrito">
             <div class="parrafodonacion">
                 <h2>Tu donación nos ayuda</h2>
-                <p>En nuestra colonia canina, queremos brindar un buen lugar para los perritos rescatados. Tienen calefacción, comen alimento super-premium y algunos, dietas especiales de comida que se prepara en nuestra cocina; muchos de ellos reciben medicación. Hay algunos epilépticos, muchos que necesitan suplementos para sus articulaciones por ser viejitos. 
-                    Todo esto solo es posible con las donaciones de nuestros colaboradores, ya que los costos de un lugar como el nuestro, que asegure el bienestar de todos los perritos que viven allí, es muy alto.</p>
-                <article class="botonprimario">
-                    ¡Quiero donar!
-                </article>
+                <p>En nuestra colonia canina, queremos brindar un buen lugar para los perritos rescatados. Tienen calefacción, comen alimento super-premium y algunos, dietas 		
+					especiales de comida que se prepara en nuestra cocina; muchos de ellos reciben medicación. Hay algunos epilépticos, muchos que necesitan suplementos para sus articulaciones por ser viejitos. 
+                	Todo esto solo es posible con las donaciones de nuestros colaboradores, ya que los costos de un lugar como el nuestro, que asegure el bienestar de todos los perritos que viven allí, es muy alto.</p>
+				</article>
+				<a class="botonprimario">
+					¡Quiero donar!
+				</a>
             </div>
         </section>
         
-        <section>
+        <section class="necesitamos">
             <h2>¿Qué necesitamos?</h2>
-            <div>dinero</div>
-            <div>Medicamentos y suplementos</div>
-            <div>Insumos y elementos varios</div>
+            <article class="necesitamosarticulos">
+				<div>Dinero</div>
+            	<div>Medicamentos y suplementos</div>
+            	<div>Insumos y elementos varios</div>
+			</article>
         </section>
 
-        <section id="dinero">
-			<div>
+        <section class="dinero">
+			<div class="cadacentavo">
 				<img src="img/img_donar/Recurso 46 1.svg" alt="alcancía de cerdito">
-				<article>
-					<h2>Dinero/Cada centavo cuenta</h2>
-					<p>Nuestros gastos fijos son altos, considerando que brindamos hogar -ojalá temporario, pero muchas veces se transforma en definitivo- a alrededor de 70 perritos. 
-					Tu donación nos ayudará a cubrir parte de esos gastos para seguir brindándole a nuestros rescatados lo que ellos necesiten.
-					Te brindamos algunas sugerencias basadas en costos reales de algunos de nuestros gastos habituales, y también la opción de que vos elijas el importe a donar.</p>
-				</article>
-				<article class="boton/primario">
-					¡Quiero donar!
-				</article>
+				<div class="textocadacentavo">
+					<article>
+						<h2>Dinero/Cada centavo cuenta</h2>
+						<p>Nuestros gastos fijos son altos, considerando que brindamos hogar, ojalá temporario, pero muchas veces se transforma en definitivo- a alrededor de 70 perritos. 
+						Tu donación nos ayudará a cubrir parte de esos gastos para seguir brindándole a nuestros rescatados lo que ellos necesiten.
+						Te brindamos algunas sugerencias basadas en costos reales de algunos de nuestros gastos habituales, y también la opción de que vos elijas el importe a donar.</p>
+					</article>
+					<a class="botonprimario">
+						¡Quiero donar!
+					</a>
+				</div>
 			</div>
-			<div>
+			<div class="precios">
 				<article>
-					<p>3000</p>
-					<p>=</p>
-					<p>1kg de alimento balanceado</p>
+					<p class="monto">3000</p>
+					<p class="producto">=</p>
+					<p class="producto">1kg de alimento balanceado</p>
 				</article>
 				<article>
-					<p>5000</p>
-					<p>=</p>
-					<p>30 cápsulas de aceite de pescado</p>
+					<p class="monto">5000</p>
+					<p class="producto">=</p>
+					<p class="producto">30 cápsulas de aceite de pescado</p>
 				</article>
 				<article>
-					<p>12000</p>
-					<p>=</p>
-					<p>Análisis de sangre completo</p>
+					<p p class="monto">12000</p>
+					<p class="producto">=</p>
+					<p class="producto">Análisis de sangre completo</p>
 				</article>
 				<article>
-					<p>15000</p>
-					<p>=</p>
-					<p>Comprimidos antipulgas para un mes</p>
+					<p p class="monto">15000</p>
+					<p class="producto">=</p>
+					<p class="producto">Comprimidos antipulgas para un mes</p>
 				</article>
 			</div>
 		</section>
 
-		<section id="medicamentos">
-			<article>
+		<section class="medicamentos">
+			<article class="fotoytexto">
 				<img src="img/img_donar/medicamentos.png">
-				<h2>Medicamentos y suplementos</h2>
+				<div class="textomedicamentos">
+					<h2>Medicamentos y suplementos</h2>
 				<p>Nuestros gastos fijos son altos, considerando que brindamos hogar -ojalá temporario, pero muchas veces se transforma en definitivo- a alrededor de 70 perritos. Tu donación nos ayudará a cubrir parte de esos gastos para seguir brindándole a nuestros rescatados lo que ellos necesiten.
 				Te brindamos algunas sugerencias basadas en costos reales de algunos de nuestros gastos habituales, y también la opción de que vos elijas el importe a donar.</p>
-				<article class="boton/primario">
-					¡Quiero donar!
-				</article> <!-- Comentario: En el Figma este article iba adentro de este, pero no se como nombrar esta etiqueta, ya que es un article adentro de otro article -->
+				<article class="botonprimario">
+					<p>¡Quiero donar medicamentos!</p>
+				</article>
+				</div>
 			</article>
 
-			<article>
-				<ul>
+			<article class="grilla-medicamentos">
+				<ul class="grid-container">
 					<li>
 						<img src="img/img_donar/endofour100-mob 1.png">
-						<article>
-							<p>ENDOFOUR 100</p>
-							<p>Antiparasitario</p>
-						</article>
+						<div class="flex-medicamentos">
+							<article class="texto-medicamento">
+								<p>ENDOFOUR 100</p>
+							</article>
+							<article class="descripcion-medicamento">
+								<p>Antiparasitario</p>
+							</article>
+						</div>
 					</li>
 					<li>
 						<img src="img/img_donar/endofour100-mob 1.png">
-						<article>
-							<p>ENDOFOUR 100</p>
-							<p>Antiparasitario</p>
-						</article>
+						<div class="flex-medicamentos">
+							<article class="texto-medicamento">
+								<p>ENDOFOUR 100</p>
+							</article>
+							<article class="descripcion-medicamento">
+								<p>Antiparasitario</p>
+							</article>
+						</div>
 					</li>
 					<li>
 						<img src="img/img_donar/endofour100-mob 1.png">
-						<article>
-							<p>ENDOFOUR 100</p>
-							<p>Antiparasitario</p>
-						</article>
+						<div class="flex-medicamentos">
+							<article class="texto-medicamento">
+								<p>ENDOFOUR 100</p>
+							</article>
+							<article class="descripcion-medicamento">
+								<p>Antiparasitario</p>
+							</article>
+						</div>
 					</li>
 					<li>
 						<img src="img/img_donar/endofour100-mob 1.png">
-						<article>
-							<p>ENDOFOUR 100</p>
-							<p>Antiparasitario</p>
-						</article>
+						<div class="flex-medicamentos">
+							<article class="texto-medicamento">
+								<p>ENDOFOUR 100</p>
+							</article>
+							<article class="descripcion-medicamento">
+								<p>Antiparasitario</p>
+							</article>
+						</div>
 					</li>
 					<li>
 						<img src="img/img_donar/endofour100-mob 1.png">
-						<article>
-							<p>ENDOFOUR 100</p>
-							<p>Antiparasitario</p>
-						</article>
+						<div class="flex-medicamentos">
+							<article class="texto-medicamento">
+								<p>ENDOFOUR 100</p>
+							</article>
+							<article class="descripcion-medicamento">
+								<p>Antiparasitario</p>
+							</article>
+						</div>
 					</li>
 					<li>
 						<img src="img/img_donar/endofour100-mob 1.png">
-						<article>
-							<p>ENDOFOUR 100</p>
-							<p>Antiparasitario</p>
-						</article>
+						<div class="flex-medicamentos">
+							<article class="texto-medicamento">
+								<p>ENDOFOUR 100</p>
+							</article>
+							<article class="descripcion-medicamento">
+								<p>Antiparasitario</p>
+							</article>
+						</div>
 					</li>
 					<li>
 						<img src="img/img_donar/endofour100-mob 1.png">
-						<article>
-							<p>ENDOFOUR 100</p>
-							<p>Antiparasitario</p>
-						</article>
+						<div class="flex-medicamentos">
+							<article class="texto-medicamento">
+								<p>ENDOFOUR 100</p>
+							</article>
+							<article class="descripcion-medicamento">
+								<p>Antiparasitario</p>
+							</article>
+						</div>
 					</li>
 					<li>
 						<img src="img/img_donar/endofour100-mob 1.png">
-						<article>
-							<p>ENDOFOUR 100</p>
-							<p>Antiparasitario</p>
-						</article>
+						<div class="flex-medicamentos">
+							<article class="texto-medicamento">
+								<p>ENDOFOUR 100</p>
+							</article>
+							<article class="descripcion-medicamento">
+								<p>Antiparasitario</p>
+							</article>
+						</div>
 					</li>
 					<li>
 						<img src="img/img_donar/endofour100-mob 1.png">
-						<article>
-							<p>ENDOFOUR 100</p>
-							<p>Antiparasitario</p>
-						</article>
+						<div class="flex-medicamentos">
+							<article class="texto-medicamento">
+								<p>ENDOFOUR 100</p>
+							</article>
+							<article class="descripcion-medicamento">
+								<p>Antiparasitario</p>
+							</article>
+						</div>
 					</li>
 					<li>
 						<img src="img/img_donar/endofour100-mob 1.png">
-						<article>
-							<p>ENDOFOUR 100</p>
-							<p>Antiparasitario</p>
-						</article>
+						<div class="flex-medicamentos">
+							<article class="texto-medicamento">
+								<p>ENDOFOUR 100</p>
+							</article>
+							<article class="descripcion-medicamento">
+								<p>Antiparasitario</p>
+							</article>
+						</div>
 					</li>
 					<li>
 						<img src="img/img_donar/endofour100-mob 1.png">
-						<article>
-							<p>ENDOFOUR 100</p>
-							<p>Antiparasitario</p>
-						</article>
+						<div class="flex-medicamentos">
+							<article class="texto-medicamento">
+								<p>ENDOFOUR 100</p>
+							</article>
+							<article class="descripcion-medicamento">
+								<p>Antiparasitario</p>
+							</article>
+						</div>
 					</li>
 					<li>
 						<img src="img/img_donar/endofour100-mob 1.png">
-						<article>
-							<p>ENDOFOUR 100</p>
-							<p>Antiparasitario</p>
-						</article>
+						<div class="flex-medicamentos">
+							<article class="texto-medicamento">
+								<p>ENDOFOUR 100</p>
+							</article>
+							<article class="descripcion-medicamento">
+								<p>Antiparasitario</p>
+							</article>
+						</div>
 					</li>
 					<li>
 						<img src="img/img_donar/endofour100-mob 1.png">
-						<article>
-							<p>ENDOFOUR 100</p>
-							<p>Antiparasitario</p>
-						</article>
+						<div class="flex-medicamentos">
+							<article class="texto-medicamento">
+								<p>ENDOFOUR 100</p>
+							</article>
+							<article class="descripcion-medicamento">
+								<p>Antiparasitario</p>
+							</article>
+						</div>
 					</li>
 					<li>
 						<img src="img/img_donar/endofour100-mob 1.png">
-						<article>
-							<p>ENDOFOUR 100</p>
-							<p>Antiparasitario</p>
-						</article>
+						<div class="flex-medicamentos">
+							<article class="texto-medicamento">
+								<p>ENDOFOUR 100</p>
+							</article>
+							<article class="descripcion-medicamento">
+								<p>Antiparasitario</p>
+							</article>
+						</div>
 					</li>
 					<li>
 						<img src="img/img_donar/endofour100-mob 1.png">
-						<article>
-							<p>ENDOFOUR 100</p>
-							<p>Antiparasitario</p>
-						</article>
+						<div class="flex-medicamentos">
+							<article class="texto-medicamento">
+								<p>ENDOFOUR 100</p>
+							</article>
+							<article class="descripcion-medicamento">
+								<p>Antiparasitario</p>
+							</article>
+						</div>
 					</li>
 					<li>
 						<img src="img/img_donar/endofour100-mob 1.png">
-						<article>
-							<p>ENDOFOUR 100</p>
-							<p>Antiparasitario</p>
-						</article>
+						<div class="flex-medicamentos">
+							<article class="texto-medicamento">
+								<p>ENDOFOUR 100</p>
+							</article>
+							<article class="descripcion-medicamento">
+								<p>Antiparasitario</p>
+							</article>
+						</div>
 					</li>
 					<li>
 						<img src="img/img_donar/endofour100-mob 1.png">
-						<article>
-							<p>ENDOFOUR 100</p>
-							<p>Antiparasitario</p>
-						</article>
+						<div class="flex-medicamentos">
+							<article class="texto-medicamento">
+								<p>ENDOFOUR 100</p>
+							</article>
+							<article class="descripcion-medicamento">
+								<p>Antiparasitario</p>
+							</article>
+						</div>
 					</li>
 					<li>
-						<img src="img/img_donar/endofour100-mob 1.png">
-						<article>
-							<p>ENDOFOUR 100</p>
-							<p>Antiparasitario</p>
-						</article>
-					</li>
-					<li>
-						<img src="img/img_donar/endofour100-mob 1.png">
-						<article>
-							<p>ENDOFOUR 100</p>
-							<p>Antiparasitario</p>
-						</article>
+						<div class="flex-medicamentos">
+							<article class="texto-medicamento">
+								<p>ENDOFOUR 100</p>
+							</article>
+							<article class="descripcion-medicamento">
+								<p>Antiparasitario</p>
+							</article>
+						</div>
 					</li>
 				</ul>
 			</article>
@@ -232,41 +295,7 @@
 		</section>
 
     </main>
-    <footer>
-	<div class="footer-container">
-		<section class="site-map">
-			<nav> <img src="img/logo_negro.svg" width="174.25px" height="50px" alt="Logo de Fundación Viva la Vida">
-				<ul>
-					<li><a href="/perritos.html" target="_self">Perritos</a></li>
-					<li><a href="sobre-fundacion.html" target="_self">Sobre la fundación</a></li>
-					<li><a href="/preguntas-frecuentes.html" target="_self">Preguntas frecuentes</a></li>
-					<li><a href="/colaborar.html" target="_self">Colaborar</a></li>
-					<li><a href="/donar.html" target="_self">Donar</a></li>
-				</ul>
-			</nav>
-		</section>
-		<section class="formulario-contacto">
-			<form method="post" action="" target="_blank" enctype="text/plain">
-				<input type="text" id="nombre" name="nombre" maxlength="30" placeholder="Nombre" required>
-				<input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
-				<textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
-				<button type="submit">Enviar</button>
-			</form>
-		</section>
-		<section class="info-contacto">
-			<div class="redes-sociales"> <a href="#" target="_blank"><img src="img/instagram.svg" width="30px" height="30px" alt="Logo de Instagram"></a> <a href="#" target="_blank"><img src="img/facebook.svg" width="30px" height="30px" alt="Logo de Facebook"></a> <a href="#" target="_blank"><img src="img/whatsapp.svg" width="30px" height="30px" alt="Logo de WhatsApp"></a> </div>
-			<div class="datos">
-				<p>Hurlingham, Buenos Aires</p>
-				<details>
-					<summary>Alias: fundacionvivalavida</summary>
-					<p>Banco Santander Rio</p>
-					<p>Cuenta Corriente Nro. 197-5434/2</p>
-					<p>CBU 0720197020000000543422</p>
-					<p>CUIT: 30-71241612-9</p>
-				</details>
-			</div>
-		</section>
-	</div>
-</footer>
+    <custom-footer></custom-footer>
+
 </body>
 </html>
