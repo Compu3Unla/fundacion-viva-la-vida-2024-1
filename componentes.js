@@ -77,18 +77,21 @@ class customfooter extends HTMLElement{
 					<input type="text" id="nombre" name="nombre" maxlength="30" placeholder="Nombre" required>
 
 					<input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
-					
+
 					<textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
 
 					<button type="submit">Enviar</button>
 			    </form>
 		    </section>
 		    <section class="info-contacto">
-			    <div class="redes-sociales"> <a href="#" target="_blank"><img src="img/iconos/instagram.svg" width="30px" height="30px" alt="Logo de Instagram"></a>
-                
-                <a href="#" target="_blank"><img src="img/iconos/facebook.svg" width="30px" height="30px" alt="Logo de Facebook"></a>
-                
-                <a href="#" target="_blank"><img src="img/iconos/whatsapp.svg" width="30px" height="30px" alt="Logo de WhatsApp"></a> </div>
+			    <div class="redes-sociales"> 
+					<a href="#" target="_blank"><img src="img/iconos/instagram.svg" width="48px" height="48px" alt="Logo de Instagram"></a>
+					
+					<a href="#" target="_blank"><img src="img/iconos/facebook.svg" width="48px" height="48px" alt="Logo de Facebook"></a>
+					
+					<a href="#" target="_blank"><img src="img/iconos/whatsapp.svg" width="48px" height="48px" alt="Logo de WhatsApp"></a>
+				</div>
+
 			    <div class="datos">
 				<p>Hurlingham, Buenos Aires</p>
 				<details>
