@@ -10,8 +10,3 @@ Belardo: Index (HTML y CSS)
 Díaz: Header y footer; Cohesión de estilos entre páginas.
 Pereyra: Donar (HTML y CSS)
 Pico: Perritos (HTML y CSS)
-
-CAMBIOS QUE HICE:
-complete el diseño básico del CSS de la pagina donar, y arregle los enlaces de los iconos que se habían roto
-
--Pereyra Laura
