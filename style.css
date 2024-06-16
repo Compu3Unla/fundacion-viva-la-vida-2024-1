@@ -501,12 +501,9 @@ header {
 	margin-left: 48px;
 	font-size: 24px;
 }
-<<<<<<< HEAD
-.botonprimario {
-=======
+.botonprimario {}
 
 .boton-Donar {
->>>>>>> origin/main
 	width: 360px;
 	height: 64px;
 	background-color: var(--naranja);
@@ -704,8 +701,6 @@ article ul li {
 	flex-direction: column;
 }
 /* FIN DONAR*/
-<<<<<<< HEAD
-=======
 
 
 /* Page not found */
@@ -743,7 +738,6 @@ article ul li {
 /* Fin Page not found */
 
 
->>>>>>> origin/main
 /* Header y Footer */
 header, footer {
 	width: 100%;
@@ -928,7 +922,7 @@ textarea#mensaje, input#nombre, input#correo {
 	border: 1px solid var(--amarillo-oscuro);
 }
 .formulario-contacto button:hover {
-	background: var(--amarillo-claro);
+	background-color: var(--amarillo-claro);
 	transform: scale(1.03);
 	transform-origin: center;
 }
