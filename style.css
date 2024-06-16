@@ -194,11 +194,13 @@ main {
 #botonera-index {
 	z-index: 1;
 	transform: translate(0, -50%);
-	width: 912px;
+	width: 100%;
+	display: flex; 
+	justify-content: center;
 }
 #botonera-index-contenedor {
 	display: flex;
-	width: 100%;
+	width: 912px;
 	gap: 48px;
 }
 #botonera-index a {
@@ -934,7 +936,6 @@ textarea#mensaje, input#nombre, input#correo {
 	
 	/* Header y Footer */
 
-
 	header nav, header nav ul {
 		flex-direction: column;
 
@@ -1027,6 +1028,7 @@ textarea#mensaje, input#nombre, input#correo {
 		justify-content: center;
 		position: relative;
 		top: 50%;
+		width: 100%;
 	}
 	#botonera-index a {
 		width: 60%;
