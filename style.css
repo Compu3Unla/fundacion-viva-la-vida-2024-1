@@ -84,10 +84,7 @@ main {
 	align-items: center;
 	flex-direction: column;
 }
-.ancho-max {
-	padding: 0 48px;
-	max-width: 1392px;
-}
+
 .boton-primario {
 	font-family: "Dosis", sans-serif;
 	font-size: 1.44rem;
@@ -132,13 +129,14 @@ main {
 }
 #contenido-cover {
 	width: 912px;
+	min-width: 348px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: var(--amarillo);
 	border: solid 1px var(--amarillo-oscuro);
 	border-radius: 44.6px;
-	padding: 28.6px;
+	padding: 24px;
 	position: relative;
 	z-index: 1;
 	gap: 48px;
@@ -289,6 +287,7 @@ main {
 #cifras-de-exito {
 	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-evenly;
 	padding: 48px 0;
@@ -322,6 +321,8 @@ main {
 	align-items: center;
 	justify-content: center;
 	width: 100%;
+	padding: 0 48px;
+	max-width: 1392px;
 }
 #contenido-fundacion {
 	display: flex;
@@ -937,6 +938,10 @@ textarea#mensaje, input#nombre, input#correo {
 
 @media screen and (max-width: 850px) {
 
+	#botonera-index-contenedor {
+		gap: 16px;
+	}
+
 	#contenido-fundacion {
 		flex-direction: column;
 	}
@@ -961,11 +966,15 @@ textarea#mensaje, input#nombre, input#correo {
 
 @media screen and (max-width: 600px) {
 
-	/*html {
-		font-size: 100%;
-	}*/
+	html {
+		font-size: 110%;
+	}
 	
 	/* Header y Footer */
+
+	header {
+		padding: 24px;
+	}
 
 	header nav, header nav ul {
 		flex-direction: column;
@@ -1042,19 +1051,19 @@ textarea#mensaje, input#nombre, input#correo {
 		width: 100%;
 		height: 100%;
 		justify-content: center;
-		padding: 56px 0px;
+		padding: 56px 24px;
 	}
 
 	#contenido-cover {
-		width: 70%;
+		width: 100%;
 		flex-direction: column;
 		padding: 32px 24px;
 	}
-	
 
 	#botonera-index {
 		justify-content: center;
 		margin: 100px 0px;
+		padding: 0 24px;
 	}
 
 	#botonera-index-contenedor {
@@ -1065,12 +1074,16 @@ textarea#mensaje, input#nombre, input#correo {
 		width: 100%;
 	}
 	#botonera-index a {
-		width: 60%;
+		width: 100%;
 	}
 	
 	#cifras-de-exito {
 		flex-direction: column;
 		gap: 48px;
+	}
+
+	#sobre-la-fundacion {
+		padding: 0 24px;
 	}
 
 	#contenido-fundacion {
