@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fundación Viva la Vida</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +17,6 @@
 	<section id="cover">
 		<video id="cover-background" src="video/cover-background.mp4" poster="img/index/poster-1.png" preload="metadata" autoplay muted loop></video>
 		<!--agregué las propiedades para que se reproduzca automaticamente en loop y una imagen para mostrar en caso que el video no se pueda reproducir-->
-		<div id="contenedor-contenido-cover">
 			<div id="contenido-cover">
 				<div>
 					<article id="cover-article">
@@ -27,12 +27,13 @@
 					<!--No estoy segura si está bien hecho poner iconos y texto dentro de una etiqueta a, ¿ustedes saben? Yo creo que es correcto, lo he usado, pero no se usa p dentro de una etiqueta a por que ya es de por sí una etiqueta de texto-->
 				</div>
 				<img src="img/calendario/portada-arcoiris.png" class="contenido-img" width="300px" height="300px" alt="Calendario solidario 2024">
-				<!--agregar medidas-->
 			</div>
-		</div>
 	</section>
 	<section id="botonera-index">
-		<div id="botonera-index-contenedor"> <a class="boton-index-1" href="perritos.html" target="_self"> Adoptar </a> <a class="boton-index-2" href="donar.html" target="_self">Donar</a> <a class="boton-index-3" href="#footer" target="_self">Contactar</a>
+		<div id="botonera-index-contenedor">
+			<a class="boton-index-1" href="perritos.html" target="_self"> Adoptar </a>
+			<a class="boton-index-2" href="donar.html" target="_self">Donar</a>
+			<a class="boton-index-3" href="#footer" target="_self">Contactar</a>
 			<!--enlazar al footer-->
 		</div>
 	</section>

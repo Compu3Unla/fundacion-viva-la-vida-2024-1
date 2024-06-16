@@ -477,10 +477,7 @@ main {
 /* COLABORAR */
 /* FIN COLABORAR */
 /* DONAR */
-header {
-	display: flex;
-	flex-direction: column;
-}
+
 /*============================*/
 .donacion {
 	width: 100%;
@@ -925,4 +922,252 @@ textarea#mensaje, input#nombre, input#correo {
 	background-color: var(--amarillo-claro);
 	transform: scale(1.03);
 	transform-origin: center;
+}
+
+/*@MEDIA - 600PX*/
+
+@media screen and (max-width: 600px) {
+
+	/*html {
+		font-size: 100%;
+	}*/
+	
+	/* Header y Footer */
+
+
+	header nav, header nav ul {
+		flex-direction: column;
+
+	}
+
+	header nav {
+		align-items: center;
+	}
+
+	header li a {
+		display: flex;
+		align-items: center;
+		border-radius: 5px;
+		padding: 8px 20px;
+		min-width: max-content;
+		letter-spacing: 0.03rem;
+	}
+
+
+	/* Footer */
+
+
+	footer a {
+		color: var(--naranja-oscuro);
+	}
+
+	.footer-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 600px;
+		margin: 48px 0;
+		gap: 48px;
+	}
+
+	footer nav img {
+		width: fit-content
+	}
+
+	.site-map img {
+		margin-left: 12px;
+	}
+
+	.site-map {
+		flex-grow: 1;
+	}
+
+	.site-map ul {
+		display: flex;
+		margin-top: 18px;
+		flex-direction: column;
+		gap: 12px;
+		font-size: 1.1rem;
+		font-weight: 700;
+		letter-spacing: 0.03rem;
+	}
+
+	.site-map a {
+		color: var(--naranja-oscuro);
+		padding: 4px 12px;
+		border-radius: 5px;
+	}
+
+	.site-map a:hover {
+		background: var(--naranja-claro);
+	}
+
+	.info-contacto {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		text-align: right;
+		max-width: 240px;
+		gap: 14px;
+	}
+
+	.redes-sociales {
+		display: flex;
+		align-content: center;
+		gap: 12px;
+		padding: 8px 20px;
+		background: var(--naranja-claro);
+		border-radius: 30px;
+	}
+
+	.redes-sociales a {
+		display: flex;
+		align-content: center;
+	}
+
+	.redes-sociales img:hover {
+		transform: scale(1.09);
+		transform-origin: center;
+	}
+
+	/* Formulario Footer */
+	.formulario-contacto {
+		flex-grow: 1;
+		margin-top: 50px;
+	}
+
+	.formulario-contacto form {
+		display: flex;
+		flex-direction: column;
+		width: 500px;
+	}
+
+	.formulario-contacto input, .formulario-contacto textarea {
+		margin-bottom: 12px;
+		height: 40px;
+		border: 1px solid var(--amarillo-oscuro);
+		border-radius: 14px;
+		padding: 14px;
+	}
+
+	.formulario-contacto textarea {
+		min-width: 500px;
+		max-width: 500px;
+		min-height: 60px;
+		max-height: 120px;
+	}
+
+	textarea#mensaje, input#nombre, input#correo {
+		font-family: "Asap", sans-serif;
+		font-size: 0.9rem;
+	}
+
+	::placeholder, ::-ms-input-placeholder {
+		color: var(--gris-claro);
+	}
+
+	.formulario-contacto button {
+		padding: 8px 20px;
+		border: none;
+		border-radius: 20px;
+		width: fit-content;
+		background: var(--amarillo);
+		font-family: "Dosis", sans-serif;
+		font-weight: 700;
+		font-size: 1rem;
+		color: var(--amarillo-oscuro);
+		letter-spacing: 0.03rem;
+		border: 1px solid var(--amarillo-oscuro);
+	}
+
+	.formulario-contacto button:hover {
+		background-color: var(--amarillo-claro);
+		transform: scale(1.03);
+		transform-origin: center;
+	}
+
+	/*INDEX*/
+
+	#cover video {}
+
+	#cover {
+		width: 100%;
+		height: 78vh;
+		max-height: 1000px;
+		min-height: 300px;
+		justify-content: center;
+	}
+
+	#contenido-cover {
+		width: 70%;
+		flex-direction: column;
+	}
+
+	#botonera-index {
+		justify-content: center;
+		margin: 100px 0px;
+	}
+
+	#botonera-index-contenedor {
+		flex-wrap: wrap;
+		justify-content: center;
+		position: relative;
+		top: 50%;
+	}
+	#botonera-index a {
+		width: 60%;
+	}
+	
+	#cifras-de-exito {
+		flex-direction: column;
+		gap: 48px;
+	}
+
+	#sobre-la-fundacion {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+
+	#contenido-fundacion {
+		display: flex;
+		border-radius: 16px;
+		border: solid 1px var(--naranja-oscuro);
+		background-color: var(--amarillo);
+		overflow: hidden;
+		width: 100%;
+	}
+
+	#contenedor-img-fundacion {
+		overflow: hidden;
+		max-height: 500px;
+	}
+
+	#contenedor-info-fundacion {
+		flex: 1.2;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: flex-start;
+		padding: 48px;
+	}
+
+	#contenido-fundacion article {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	#contenido-fundacion h3 {
+		color: var(--naranja-oscuro);
+	}
+	
+	#contenido-fundacion p {
+		max-width: 600px;
+		font-size: 1.2rem;
+	}
+	/* FIN INDEX */
 }

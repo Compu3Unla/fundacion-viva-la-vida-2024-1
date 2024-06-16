@@ -18,7 +18,10 @@ class customheader extends HTMLElement{
     render( ){
         this.innerHTML += ` 
         <header>
-	        <nav> <a href="index.html" target="_self"><img src="img/logos/logo-azul.svg" width="174.25px" height="50px" alt="Logo de Fundación Viva la Vida"></a>
+	        <nav>
+			<a href="index.html" target="_self"><img src="img/logos/logo-azul.svg" width="174.25px" height="50px" alt="Logo de Fundación Viva la Vida">
+			</a>
+
 		    <ul>
 			    <li><a href="perritos.html" target="_self">Perritos</a></li>
 			    <li><a href="sobre-fundacion.html" target="_self">Sobre la fundación</a></li>
