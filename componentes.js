@@ -74,10 +74,13 @@ class customfooter extends HTMLElement{
 		    </section>
 		    <section class="formulario-contacto">
 			    <form method="post" action="" target="_blank" enctype="text/plain">
-				<input type="text" id="nombre" name="nombre" maxlength="30" placeholder="Nombre" required>
-				<input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
-				<textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
-				<button type="submit">Enviar</button>
+					<input type="text" id="nombre" name="nombre" maxlength="30" placeholder="Nombre" required>
+
+					<input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+					
+					<textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+
+					<button type="submit">Enviar</button>
 			    </form>
 		    </section>
 		    <section class="info-contacto">

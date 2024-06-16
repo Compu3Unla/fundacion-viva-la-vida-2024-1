@@ -956,19 +956,8 @@ textarea#mensaje, input#nombre, input#correo {
 
 	/* Footer */
 
-
-	footer a {
-		color: var(--naranja-oscuro);
-	}
-
 	.footer-container {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		width: 100%;
-		max-width: 600px;
-		margin: 48px 0;
-		gap: 48px;
+		flex-direction: column;
 	}
 
 	footer nav img {
@@ -1022,70 +1011,21 @@ textarea#mensaje, input#nombre, input#correo {
 		border-radius: 30px;
 	}
 
-	.redes-sociales a {
-		display: flex;
-		align-content: center;
-	}
-
-	.redes-sociales img:hover {
-		transform: scale(1.09);
-		transform-origin: center;
-	}
-
 	/* Formulario Footer */
-	.formulario-contacto {
-		flex-grow: 1;
-		margin-top: 50px;
-	}
 
 	.formulario-contacto form {
-		display: flex;
-		flex-direction: column;
-		width: 500px;
+		width: 100%;
+		gap: 16px;
 	}
 
 	.formulario-contacto input, .formulario-contacto textarea {
-		margin-bottom: 12px;
-		height: 40px;
-		border: 1px solid var(--amarillo-oscuro);
-		border-radius: 14px;
-		padding: 14px;
+		height: 56px;
+		width: 100%;
+		min-width: 100%;
 	}
 
 	.formulario-contacto textarea {
-		min-width: 500px;
-		max-width: 500px;
-		min-height: 60px;
-		max-height: 120px;
-	}
-
-	textarea#mensaje, input#nombre, input#correo {
-		font-family: "Asap", sans-serif;
-		font-size: 0.9rem;
-	}
-
-	::placeholder, ::-ms-input-placeholder {
-		color: var(--gris-claro);
-	}
-
-	.formulario-contacto button {
-		padding: 8px 20px;
-		border: none;
-		border-radius: 20px;
-		width: fit-content;
-		background: var(--amarillo);
-		font-family: "Dosis", sans-serif;
-		font-weight: 700;
-		font-size: 1rem;
-		color: var(--amarillo-oscuro);
-		letter-spacing: 0.03rem;
-		border: 1px solid var(--amarillo-oscuro);
-	}
-
-	.formulario-contacto button:hover {
-		background-color: var(--amarillo-claro);
-		transform: scale(1.03);
-		transform-origin: center;
+		height: 152px;
 	}
 
 	/*INDEX*/
