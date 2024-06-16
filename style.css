@@ -194,11 +194,13 @@ main {
 #botonera-index {
 	z-index: 1;
 	transform: translate(0, -50%);
-	width: 912px;
+	width: 100%;
+	display: flex; 
+	justify-content: center;
 }
 #botonera-index-contenedor {
 	display: flex;
-	width: 100%;
+	width: 912px;
 	gap: 48px;
 }
 #botonera-index a {
@@ -477,10 +479,7 @@ main {
 /* COLABORAR */
 /* FIN COLABORAR */
 /* DONAR */
-header {
-	display: flex;
-	flex-direction: column;
-}
+
 /*============================*/
 .donacion {
 	width: 100%;
@@ -925,4 +924,128 @@ textarea#mensaje, input#nombre, input#correo {
 	background-color: var(--amarillo-claro);
 	transform: scale(1.03);
 	transform-origin: center;
+}
+
+/*@MEDIA - 600PX*/
+
+@media screen and (max-width: 600px) {
+
+	/*html {
+		font-size: 100%;
+	}*/
+	
+	/* Header y Footer */
+
+	header nav, header nav ul {
+		flex-direction: column;
+
+	}
+
+	header nav {
+		align-items: center;
+	}
+
+	header li a {
+		display: flex;
+		align-items: center;
+		border-radius: 5px;
+		padding: 8px 20px;
+		min-width: max-content;
+		letter-spacing: 0.03rem;
+	}
+
+
+	/* Footer */
+
+	.footer-container {
+		flex-direction: column;
+	}
+
+	.site-map ul {
+		gap: 24px;
+	}
+
+	.info-contacto {
+		align-items: center;
+		max-width: 600px;
+	}
+
+	.redes-sociales {
+		gap: 24px;
+	}
+
+	/* Formulario Footer */
+
+	.formulario-contacto form {
+		width: 100%;
+		gap: 16px;
+	}
+
+	.formulario-contacto input, .formulario-contacto textarea {
+		height: 56px;
+		width: 100%;
+		min-width: 100%;
+	}
+
+	.formulario-contacto textarea {
+		height: 152px;
+	}
+
+	.datos {
+		width: 100%;
+		display: flex;
+		gap: 16px;
+		justify-content: center;
+		text-align: center;
+		flex-direction: column;
+		margin: 48px 0px;
+	}
+
+	/*INDEX*/
+
+	#cover video {}
+
+	#cover {
+		width: 100%;
+		height: 78vh;
+		max-height: 1000px;
+		min-height: 300px;
+		justify-content: center;
+	}
+
+	#contenido-cover {
+		width: 70%;
+		flex-direction: column;
+	}
+
+	#botonera-index {
+		justify-content: center;
+		margin: 100px 0px;
+	}
+
+	#botonera-index-contenedor {
+		flex-wrap: wrap;
+		justify-content: center;
+		position: relative;
+		top: 50%;
+		width: 100%;
+	}
+	#botonera-index a {
+		width: 60%;
+	}
+	
+	#cifras-de-exito {
+		flex-direction: column;
+		gap: 48px;
+	}
+
+	#contenido-fundacion {
+		flex-direction: column;
+	}
+
+	#contenedor-info-fundacion {
+		gap: 32px;
+	}
+
+	/* FIN INDEX */
 }
