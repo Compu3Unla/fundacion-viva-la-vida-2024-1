@@ -88,7 +88,7 @@ main {
 /* INDEX */
 #cover {
 	width: 100%;
-	height: 70vh;
+	height: 78vh;
 	max-height: 882px;
 	display: flex;
 	justify-content: center;
@@ -96,11 +96,15 @@ main {
 }
 
 #contenido-cover {
-	width: 600px;
+	width: 800px;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: var(--amarillo);
 	border: solid 1px var(--amarillo-oscuro);
-	border-radius: 16px;
+	border-radius: 24px;
+	padding: 16px;
+
 }
 
 #cover-background {
@@ -116,15 +120,7 @@ main {
 	background-color: var(--amarillo);
 	display: flex;
 	gap: 32px;
-	padding: 24px;
-}
-
-#contenido-cover div {
-	width: 60%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap: 32px;
+	padding: 24px 16px;
 }
 
 /* #contenido-cover img {
@@ -150,20 +146,22 @@ main {
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
+	gap: 8px;
 }
 
 #botonera-index {
 	width: 100%;
+	height: 1vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 5vw;
+	z-index: 1;
 }
 
 #botonera-index a {
 	width: 15vw;
 	min-width: 150px;
-	background-color: var(--azul);
 	padding: 16px 24px;
 	font-size: 1.5rem;
 	text-align: center;
@@ -251,8 +249,7 @@ main {
 
 #contenido-fundacion {
 	display: flex;
-	width: 800px;
-	height: 400px;
+	height: 600px;
 	background-color: var(--amarillo);
 	border-radius: 16px;
 	border: solid 1px var(--naranja-oscuro);
@@ -362,7 +359,7 @@ header {
 .donacion {
 	width: 100%;
 	display: flex;
-	margin: 0px auto;
+	justify-content: center;
 	padding: 154px 264px;
 	align-items: center;
 	background-color: var(--amarillo-claro);
@@ -380,7 +377,7 @@ header {
 	font-size: 24px;
 }
 
-.botonprimario {
+.boton-Donar {
 	width: 360px;
 	height: 64px;
 	background-color: var(--naranja);
@@ -394,6 +391,45 @@ header {
 	padding-left: 1px;
     padding-right: 0px;
     padding-top: 10px;
+}
+
+.boton-Donar:hover {
+	background-color: var(--naranja-oscuro);
+}
+
+.boton-Donar:active {
+	background-color: var(--naranja-claro);
+	color: var(--naranja-oscuro);
+}
+
+.boton-Donar2 {
+	width: 360px;
+	height: 64px;
+	background-color: var(--naranja);
+	padding: 16px 48px;
+	text-align: center;
+	border-radius: 30px;
+	color: white;
+	font-family: Dosis;
+	font-size: 28px;
+	transform-origin: center;
+	padding-left: 1px;
+    padding-right: 0px;
+    padding-top: 10px;
+}
+
+.boton-Donar2:hover {
+	background-color: var(--naranja-oscuro);
+}
+
+.boton-Donar2:active {
+	background-color: var(--naranja-claro);
+	color: var(--naranja-oscuro);
+}
+
+.foto_Donar {
+border-radius: 40px; 
+border: 8px solid var(--naranja);
 }
 /*============================*/
 
@@ -454,6 +490,7 @@ section article div {
 	padding-top: 68px;
 	width: 1392px;
 	height: 440px;
+	margin: 0px auto;
 	justify-content: center;
 	align-items: center;
 	gap: 48px;
@@ -583,6 +620,41 @@ article ul li {
 	flex-direction: column;
 }
 /* FIN DONAR*/
+
+
+/* Page not found */
+
+.not-found {
+	width: 100%;
+	height: 100%;
+	margin: 0px auto;
+	background-color: rgb(48, 45, 45);
+	gap: 40px;
+}
+
+.mensaje-not-found {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+	padding-top: 12%;
+	color: var(--naranja);
+	font-size: 2em;
+}
+
+.salchichin {
+	animation: salchicha 3s linear infinite;
+    }
+
+@keyframes salchicha {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
+
+
+/* Fin Page not found */
 
 
 /* Header y Footer */
