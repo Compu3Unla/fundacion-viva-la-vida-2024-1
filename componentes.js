@@ -24,9 +24,9 @@ class customheader extends HTMLElement{
 
 		    <ul>
 			    <li><a href="perritos.html" target="_self">Perritos</a></li>
-			    <li><a href="sobre-fundacion.html" target="_self">Sobre la fundación</a></li>
-			    <li><a href="preguntas-frecuentes.html" target="_self">Preguntas frecuentes</a></li>
-			    <li><a href="colaborar.html" target="_self">Colaborar</a></li>
+			    <li><a href="pagenotfound.html" target="_self">Sobre la fundación</a></li>
+			    <li><a href="pagenotfound.html" target="_self">Preguntas frecuentes</a></li>
+			    <li><a href="pagenotfound.html" target="_self">Colaborar</a></li>
 			    <li class="boton-destacado"><a href="donar.html" target="_self">Donar</a></li>
 		    </ul>
 	        </nav>
