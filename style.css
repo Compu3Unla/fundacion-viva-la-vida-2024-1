@@ -338,7 +338,7 @@ main {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: url(img/quienessomos1.png);
+	background-image: url(img/index/quienessomos.png);
 }
 #contenedor-info-fundacion {
 	flex: 1.2;
