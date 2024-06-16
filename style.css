@@ -1125,49 +1125,13 @@ textarea#mensaje, input#nombre, input#correo {
 		gap: 48px;
 	}
 
-	#sobre-la-fundacion {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-	}
-
 	#contenido-fundacion {
-		display: flex;
-		border-radius: 16px;
-		border: solid 1px var(--naranja-oscuro);
-		background-color: var(--amarillo);
-		overflow: hidden;
-		width: 100%;
-	}
-
-	#contenedor-img-fundacion {
-		overflow: hidden;
-		max-height: 500px;
+		flex-direction: column;
 	}
 
 	#contenedor-info-fundacion {
-		flex: 1.2;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: flex-start;
-		padding: 48px;
+		gap: 32px;
 	}
 
-	#contenido-fundacion article {
-		display: flex;
-		flex-direction: column;
-		gap: 24px;
-	}
-
-	#contenido-fundacion h3 {
-		color: var(--naranja-oscuro);
-	}
-	
-	#contenido-fundacion p {
-		max-width: 600px;
-		font-size: 1.2rem;
-	}
 	/* FIN INDEX */
 }
