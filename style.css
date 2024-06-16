@@ -455,7 +455,7 @@ main {
 	align-items: center;
 	border: solid 1px var(--amarillo-oscuro);
 	overflow: hidden;
-		transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 .perrito:hover{
 		transform: scale(1.03);
