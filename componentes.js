@@ -21,9 +21,10 @@ class customheader extends HTMLElement{
 	        <nav> <a href="index.html" target="_self"><img src="img/logos/logo-azul.svg" width="174.25px" height="50px" alt="Logo de Fundación Viva la Vida"></a>
 		    <ul>
 			    <li><a href="perritos.html" target="_self">Perritos</a></li>
-			    <li><a href="sobre-fundacion.html" target="_self">Sobre la fundación</a></li>
-			    <li><a href="preguntas-frecuentes.html" target="_self">Preguntas frecuentes</a></li>
-			    <li><a href="colaborar.html" target="_self">Colaborar</a></li>
+
+			    <li><a href="pagenotfound.html" target="_self">Sobre la fundación</a></li>
+			    <li><a href="pagenotfound.html" target="_self">Preguntas frecuentes</a></li>
+			    <li><a href="pagenotfound.html" target="_self">Colaborar</a></li>
 			    <li class="boton-destacado"><a href="donar.html" target="_self">Donar</a></li>
 		    </ul>
 	        </nav>
