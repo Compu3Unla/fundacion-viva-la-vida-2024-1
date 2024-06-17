@@ -509,6 +509,7 @@ main {
 .parrafodonacion h2 {
 	color: var(--naranja);
 }
+.botonprimario {}
 
 .boton-Donar {
 	width: 360px;
@@ -676,7 +677,6 @@ section article div {
 .textomedicamentos h2 {
 	color: var(--naranja);
 }
-
 
 .grid-container {
 	width: 1393px;
