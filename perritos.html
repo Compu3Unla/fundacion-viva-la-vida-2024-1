@@ -12,74 +12,144 @@
 </head>
 
 <body>
-	<custom-header></custom-header>
-	<main>
-		<img src="img/banners/baner_perritos.svg" width="100%" alt="banner perritos"/>
-		
-		<div class="perritos_main">
-			<section class="filtro">
-				<h4>Filtros</h4>
-				
-				<article class="opciones_filtro">
-					<p>Edad</p>
-						<ul>
-							<li><label>Cachorro<input type="radio" name="Edad" value="Cachorro" id="Cachorro"></label></li>
-							<li><label>Joven<input type="radio" name="Edad" value="Joven" id="Joven"></label></li>
-							<li><label>Adulto<input type="radio" name="Edad" value="Adulto" id="Adulto"></label></li>
-							<li><label>Viejito<input type="radio" name="Edad" value="Viejito" id="Viejito"></label></li>
-						</ul>		
-				</article>
-	  			
-				<article class="opciones_filtro">
-					<p>Tamaño</p>
-						<ul>
-							<li><label>Pequeño<input type="radio" name="Tamaño" value="Pequeño" id="Pequeño"></label></li>
-							<li><label>Mediano<input type="radio" name="Tamaño" value="Mediano" id="Mediano"></label></li>
-							<li><label>Grande<input type="radio" name="Tamaño" value="Grande" id="Grande"></label></li>
-						</ul>		
-				</article>
-				
-				<article class="opciones_filtro">
-					<p>Se lleva bien con</p>
-						<ul>
-							<li><label>Perros <input type="radio" name="Se lleva bien" value="Perros" id="Perros"></label></li>
-							<li><label>Niños <input type="radio" name="Se lleva bien" value="Niños" id="Niños"></label></li>
-							<li><label>Otros animales <input type="radio" name="Se lleva bien" value="Otros animales" id="Otros animales"></label></li>
-						</ul>		
-				</article>
-			  	
-				<article class="opciones_filtro">
-					<p>Sexo</p>
-						<ul>
-							<li><label>Macho <input type="radio" name="Sexo" value="Macho" id="Macho"></label></li>
-							<li><label>Hembra <input type="radio" name="Sexo" value="Hembra" id="Hembra"></label></li>
-						</ul>		
-				</article>
-				
+<custom-header></custom-header>
+<main>
+	<section class="encabezado encabezado-naranja">
+		<div class="contenedor-encabezado ancho-max">
+			<h1>¡Nuestros perritos!</h1>
+			<img src="img/ilustraciones/perrito1.png" width="201px" height="162px" alt="Ilustración Perrito Banner"> </div>
 	</section>
-		<section class="perfiles">
-			<img src="img/perfiles/1_perro.png" width="330px" height="330px" alt="1 perfil canino">
-			<img src="img/perfiles/2_perro.png" width="330px" height="330px" alt="2 perfil canino">
-			<img src="img/perfiles/3_fermin.png" width="330px" height="330px" alt="3 perfil canino">
-			<img src="img/perfiles/4_perro.png" width="330px" height="330px" alt="4 perfil canino">
-			<img src="img/perfiles/5_perro.png" width="330px" height="330px" alt="5 perfil canino">
-			<img src="img/perfiles/6_perro.png" width="330px" height="330px" alt="6 perfil canino">
-			<img src="img/perfiles/7_perro.png" width="330px" height="330px" alt="7 perfil canino">
-			<img src="img/perfiles/8_perro.png" width="330px" height="330px" alt="8 perfil canino">
-			<img src="img/perfiles/9_perro.png" width="330px" height="330px" alt="9 perfil canino">
-			<img src="img/perfiles/10_perro.png" width="330px" height="330px" alt="10 perfil canino">
-			<img src="img/perfiles/11_perro.png" width="330px" height="330px" alt="11 perfil canino">
-			<img src="img/perfiles/12_perro.png" width="330px" height="330px" alt="12 perfil canino">
-			<aside>
-			<img src="img/perfiles/botones.svg" alt="botones" width="100%"/>
-			</aside>
-		</section>
-			
-	</div>
-		
-     
-	
-	</main>
-	<custom-footer></custom-footer>
+	<section class="main-perritos">
+		<div class="contenedor-main-perritos ancho-max">
+			<div class="filtros">
+				<h4>Filtrar perritos</h4>
+				<h6>Por edad:</h6>
+				<div class="filtro-edad">
+					<label>
+						<input type="checkbox" value="cachorro">
+						Cachorro</label>
+					<label>
+						<input type="checkbox" value="joven">
+						Joven</label>
+					<label>
+						<input type="checkbox" value="adulto">
+						Adulto</label>
+					<label>
+						<input type="checkbox" value="viejito">
+						Viejito</label>
+				</div>
+				<h6>Por tamaño:</h6>
+				<div class="filtro-tamano">
+					<label>
+						<input type="checkbox" value="pequeno">
+						Pequeño</label>
+					<label>
+						<input type="checkbox" value="mediano">
+						Mediano</label>
+					<label>
+						<input type="checkbox" value="grande">
+						Grande</label>
+				</div>
+				<h6>Se lleva bien con:</h6>
+				<div class="filtro-relacion">
+					<label>
+						<input type="checkbox" value="perros">
+						Perros</label>
+					<label>
+						<input type="checkbox" value="ninos">
+						Niños/as</label>
+					<label>
+						<input type="checkbox" value="gatos">
+						Gatos</label>
+				</div>
+				<h6>Por sexo:</h6>
+				<div class="filtro-sexo">
+					<label>
+						<input type="checkbox" value="macho">
+						Macho</label>
+					<label>
+						<input type="checkbox" value="hembra">
+						Hembra</label>
+				</div>
+				<button id="limpiar-filtros">Limpiar filtros</button>
+			</div>
+    <div class="perfiles">
+        <div class="perrito">
+            <a href="#">
+                <img src="img/perfiles/1_marley.png" height="340px" width="332px" alt="Foto Perrito">
+                <h6>Rex</h6>
+            </a>
+        </div>
+        <div class="perrito">
+            <a href="#">
+                <img src="img/perfiles/2_luigi.png"  height="340px" width="332px" alt="Foto Perrito">
+                <h6>Toby</h6>
+            </a>
+        </div>
+        <div class="perrito">
+            <a href="#">
+                <img src="img/perfiles/3_fermin.png" height="340px" width="332px" alt="Foto Perrito">
+                <h6>Fermin</h6>
+            </a>
+        </div>
+        <div class="perrito">
+            <a href="#">
+                <img src="img/perfiles/4_chula.png" height="340px" width="332px" alt="Foto Perrito">
+                <h6>Luna</h6>
+            </a>
+        </div>
+        <div class="perrito">
+            <a href="#">
+                <img src="img/perfiles/5_perro.png" height="340px" width="332px" alt="Foto Perrito">
+                <h6>Bruno</h6>
+            </a>
+        </div>
+        <div class="perrito">
+            <a href="#">
+                <img src="img/perfiles/6_toby.png" height="340px" width="332px" alt="Foto Perrito">
+                <h6>Max</h6>
+            </a>
+        </div>
+        <div class="perrito">
+            <a href="#">
+                <img src="img/perfiles/7_coco.png" height="340px" width="332px" alt="Foto Perrito">
+                <h6>Lola</h6>
+            </a>
+        </div>
+        <div class="perrito">
+            <a href="#">
+                <img src="img/perfiles/8_dylan.png" height="340px" width="332px" alt="Foto Perrito">
+                <h6>Coco</h6>
+            </a>
+        </div>
+        <div class="perrito">
+            <a href="#">
+                <img src="img/perfiles/9_perro.png" height="340px" width="332px" alt="Foto Perrito">
+                <h6>Rusty</h6>
+            </a>
+        </div>
+        <div class="perrito">
+            <a href="#">
+                <img src="img/perfiles/10_indy.png" height="340px" width="332px" alt="Foto Perrito">
+                <h6>Bella</h6>
+            </a>
+        </div>
+        <div class="perrito">
+            <a href="#">
+                <img src="img/perfiles/11_rufina.png" height="340px" width="332px" alt="Foto Perrito">
+                <h6>Rocky</h6>
+            </a>
+        </div>
+        <div class="perrito">
+            <a href="#">
+                <img src="img/perfiles/12_milton.png" height="340px" width="332px" alt="Foto Perrito">
+                <h6>Molly</h6>
+            </a>
+        </div>
+    </div>
+		</div>
+	</section>
+</main>
+<custom-footer></custom-footer>
 </body>
 </html>

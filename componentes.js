@@ -18,7 +18,10 @@ class customheader extends HTMLElement{
     render( ){
         this.innerHTML += ` 
         <header>
-	        <nav> <a href="index.html" target="_self"><img src="img/logos/logo-azul.svg" width="174.25px" height="50px" alt="Logo de Fundación Viva la Vida"></a>
+	        <nav>
+			<a href="index.html" target="_self"><img src="img/logos/logo-azul.svg" width="174.25px" height="50px" alt="Logo de Fundación Viva la Vida">
+			</a>
+
 		    <ul>
 			    <li><a href="perritos.html" target="_self">Perritos</a></li>
 			    <li><a href="pagenotfound.html" target="_self">Sobre la fundación</a></li>
@@ -71,18 +74,24 @@ class customfooter extends HTMLElement{
 		    </section>
 		    <section class="formulario-contacto">
 			    <form method="post" action="" target="_blank" enctype="text/plain">
-				<input type="text" id="nombre" name="nombre" maxlength="30" placeholder="Nombre" required>
-				<input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
-				<textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
-				<button type="submit">Enviar</button>
+					<input type="text" id="nombre" name="nombre" maxlength="30" placeholder="Nombre" required>
+
+					<input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+
+					<textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+
+					<button type="submit">Enviar</button>
 			    </form>
 		    </section>
 		    <section class="info-contacto">
-			    <div class="redes-sociales"> <a href="#" target="_blank"><img src="img/iconos/instagram.svg" width="30px" height="30px" alt="Logo de Instagram"></a>
-                
-                <a href="#" target="_blank"><img src="img/iconos/facebook.svg" width="30px" height="30px" alt="Logo de Facebook"></a>
-                
-                <a href="#" target="_blank"><img src="img/iconos/whatsapp.svg" width="30px" height="30px" alt="Logo de WhatsApp"></a> </div>
+			    <div class="redes-sociales"> 
+					<a href="#" target="_blank"><img src="img/iconos/instagram.svg" width="48px" height="48px" alt="Logo de Instagram"></a>
+					
+					<a href="#" target="_blank"><img src="img/iconos/facebook.svg" width="48px" height="48px" alt="Logo de Facebook"></a>
+					
+					<a href="#" target="_blank"><img src="img/iconos/whatsapp.svg" width="48px" height="48px" alt="Logo de WhatsApp"></a>
+				</div>
+
 			    <div class="datos">
 				<p>Hurlingham, Buenos Aires</p>
 				<details>

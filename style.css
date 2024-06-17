@@ -1,33 +1,28 @@
 @charset "utf-8";
 /* CSS Document */
-
 /* General */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-
 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
-
 a {
 	text-decoration: none;
 }
-
 html, body {
-    height: 100%;
+	height: 100%;
 }
-
 body {
 	font-family: "Asap", sans-serif;
 	display: flex;
 	flex-direction: column;
+	background-color: var(--amarillo-claro);
 }
-
 a, button, img {
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -35,40 +30,7 @@ a, button, img {
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
-
-/* Main */
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-a {
-	text-decoration: none;
-}
-
-html, body {
-    height: 100%;
-}
-
-body {
-	font-family: "Asap", sans-serif;
-	display: flex;
-	flex-direction: column;
-}
-
-a, button {
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
-}
-
-/* Main */
-
-:root {
+/* Estilos */ :root {
 	--azul: #AEDEE0;
 	--amarillo: #F5F19C;
 	--naranja: #EF9D71;
@@ -78,14 +40,82 @@ a, button {
 	--azul-claro: #DCF1F2;
 	--amarillo-claro: #FBF9D6;
 	--naranja-claro: #F5C5AA;
+	--negro: #332b29;
 }
-
+h1 {
+	font-family: "Dosis", sans-serif;
+	font-size: 2.986rem;
+}
+h2 {
+	font-family: "Dosis", sans-serif;
+	font-size: 2.488rem;
+	font-weight: 700;
+}
+h3 {
+	font-family: "Dosis", sans-serif;
+	font-size: 2.074rem;
+	font-weight: 700;
+}
+h4 {
+	font-family: "Dosis", sans-serif;
+	font-size: 1.728rem;
+	font-weight: 700;
+}
+h5 {
+	font-family: "Dosis", sans-serif;
+	font-size: 1.44rem;
+	font-weight: 700;
+}
+h6 {
+	font-family: "Dosis", sans-serif;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+p {
+	font-family: "Asap", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 0.2px;
+}
 /* Main */
 main {
 	flex: 1;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
+.boton-primario {
+	font-family: "Dosis", sans-serif;
+	font-size: 1.44rem;
+	font-weight: 700;
+	padding: 16px 32px;
+	background-color: var(--amarillo);
+	border: solid 1px var(--amarillo-oscuro);
+	border-radius: 40px;
+	text-align: center;
+	color: var(--amarillo-oscuro);
+}
+.boton-secundario {
+	font-family: "Dosis", sans-serif;
+	font-size: 1.44rem;
+	font-weight: 600;
+	padding: 16px 32px;
+	background-color: var(--naranja);
+	border: solid 1px var(--naranja-oscuro);
+	border-radius: 32px;
+	text-align: center;
+	color: var(--naranja-oscuro);
+}
 /* INDEX */
+#index-main {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 132px;
+	width: 100%;
+	margin: 71px 0 132px;
+}
 #cover {
 	width: 100%;
 	height: 78vh;
@@ -93,143 +123,174 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+	overflow: hidden;
+	min-height: 480px;
 }
-
 #contenido-cover {
-	width: 800px;
+	width: 912px;
+	min-width: 348px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: var(--amarillo);
 	border: solid 1px var(--amarillo-oscuro);
-	border-radius: 24px;
-	padding: 16px;
-
+	border-radius: 44.6px;
+	padding: 24px;
+	position: relative;
+	z-index: 1;
+	gap: 48px;
 }
-
 #cover-background {
-	position: fixed;
+	position: absolute; /* me parece mejor este atributo en lugar de fixed para que el video se desplace normalmente junto al contenido */
 	z-index: -1;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* hice ajustes ya que una parte del video se tapaba por el navegador del header */
+	transform: translate(-50%, -50%);
 }
-
 #contenido-cover div {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 300px;
 	background-color: var(--amarillo);
-	display: flex;
 	gap: 32px;
-	padding: 24px 16px;
+	padding-left: 16px;
 }
-
-/* #contenido-cover img {
-	border-radius: 16px;
+.contenido-img { /*le puse un class a la imagen para el borde*/
 	border: solid 1px var(--amarillo-oscuro);
+	border-radius: 16px;
 }
-
-.icon-button img {
-	border-style: none;
-	border-color: var(--amarillo);
-} */
-
-/*le aplique el borde a la imagen de portada del calendario y se le aplico tambien al icono. Intente sacarlo aplicando del atributo none al border-style con este selector pero no funcionaa D: voy a ver como lo arreglo pero si alguien sabe genial*/
-
 #cover-article {
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
 }
-
+#cover-article h3 {
+	color: var(--amarillo-oscuro);
+}
+#cover-article p {
+	font-size: 1.266rem;
+}
 .icon-button {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
 	gap: 8px;
+	font-family: "Dosis", sans-serif;
+	font-size: 1.266rem;
+	font-weight: 500;
+	color: var(--amarillo-oscuro);
+	background: var(--amarillo-claro);
+	width: fit-content;
+	padding: 5.72px 17.72px 5.72px 5.72px;
+	border-radius: 30px;
 }
-
 #botonera-index {
-	width: 100%;
-	height: 1vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 5vw;
 	z-index: 1;
+	transform: translate(0, -50%);
+	width: 100%;
+	display: flex; 
+	justify-content: center;
 }
-
+#botonera-index-contenedor {
+	display: flex;
+	width: 912px;
+	gap: 48px;
+}
 #botonera-index a {
-	width: 15vw;
-	min-width: 150px;
+	width: 100%;
+	min-width: 200px;
 	padding: 16px 24px;
 	font-size: 1.5rem;
 	text-align: center;
-	border-radius: 8px;
+	border-radius: 16px;
 }
-
-
 .boton-index-1 {
 	color: var(--amarillo-oscuro);
 	border: solid 1px var(--amarillo-oscuro);
 	background-color: var(--amarillo);
 }
-
 .boton-index-2 {
 	color: var(--naranja-oscuro);
 	border: solid 1px var(--naranja-oscuro);
 	background-color: var(--naranja);
 }
-
 .boton-index-3 {
 	color: var(--azul-oscuro);
 	border: solid 1px var(--azul-oscuro);
 	background-color: var(--azul);
 }
-
 #previsualizar-perritos {
 	width: 100%;
-	padding: 100px 0px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 72px;
-	background-color: var(--amarillo-claro);
 }
-
-#h-de-prueba {
-	font-size: 1.8rem;
-	color: var(--amarillo-oscuro);
+/* SLIDE PERRITOS */
+.slider-perritos {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	height: 310px;
 }
-
-#carrousel {
+.slider-perritos-contenedor {
+	display: flex;
+	animation-duration: 80s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	white-space: nowrap;
+	position: absolute;
+	top: 0;
+	gap: 24px;
+	left: 0;
+	animation-name: slide-left;
+	align-items: center;
+	height: 310px;
+}
+.item-perrito {
+	height: 300px;
+	overflow: hidden;
+	border-radius: 16px;
+	border: solid 1px var(--negro);
+}
+.item-perrito h6 {
+	position: sticky;
+	bottom: 0;
+	width: 100%;
+	background: var(--naranja);
+	padding: 8px 16px;
+	color: var(--negro);
+	border-top: solid 1px var(--naranja-oscuro);
+}
+.item-perrito:nth-of-type(3n + 1) h6 {
+	background-color: var(--amarillo);
+}
+.item-perrito:nth-of-type(3n + 2) h6 {
+	background-color: var(--naranja);
+}
+.item-perrito:nth-of-type(3n) h6 {
+	background-color: var(--azul);
+} /* se me ocurrió poner un color de fondo diferente a cada perrito pero capaz no queda muy bien porque ya arriba se repiten lo tres colores en los botones, que opinan? */
+@keyframes slide-left {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+#cifras-de-exito {
 	width: 100%;
 	display: flex;
-	gap: 32px;
-	overflow-x: scroll;
-	padding: 0px 72px;
-}
-
-.item-carrousel {
-	width: 300px;
-	height: 300px;
-	border-radius: 16px;
-}
-
-.boton-primario {
-	padding: 16px 32px;
-	background-color: var(--amarillo);
-	border: solid 1px var(--amarillo-oscuro);
-	border-radius: 32px;
-	text-align: center;
-	color: var(--amarillo-oscuro);
-}
-
-#cifras-de-exito {
-	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-between;
-	padding: 32px 72px;
+	justify-content: space-evenly;
+	padding: 48px 0;
 	background-color: var(--azul);
 	color: var(--azul-oscuro);
 	font-size: 2rem;
@@ -237,125 +298,195 @@ main {
 	border-top: solid 1px var(--azul-oscuro);
 	border-bottom: solid 1px var(--azul-oscuro);
 }
-
+.item-exito {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 12px;
+}
+.cifra {
+	font-family: "Dosis", sans-serif;
+	font-size: 3.998rem;
+	font-weight: 700;
+}
+.dato {
+	font-family: "Dosis", sans-serif;
+	font-weight: 500;
+	font-size: 1.66rem;
+	max-width: 150px;
+	text-align: left;
+}
 #sobre-la-fundacion {
-	width: 100%;
-	padding: 32px 72px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: var(--amarillo-claro);
+	width: 100%;
+	padding: 0 48px;
+	max-width: 1392px;
 }
-
 #contenido-fundacion {
 	display: flex;
-	height: 600px;
-	background-color: var(--amarillo);
 	border-radius: 16px;
 	border: solid 1px var(--naranja-oscuro);
+	background-color: var(--amarillo);
+	overflow: hidden;
+	width: 100%;
 }
-
-#contenido-fundacion div {
+#contenedor-img-fundacion {
+	overflow: hidden;
+	width: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(img/index/quienessomos.png);
+}
+#contenedor-info-fundacion {
+	flex: 1.2;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: flex-start;
-	padding: 32px 80px 32px 32px;
-	
+	padding: 48px;
+	gap: 48px;
 }
-
 #contenido-fundacion article {
 	display: flex;
 	flex-direction: column;
-	gap: 32px;
+	gap: 24px;
 }
-
-#quienes-somos-img {
-	border-radius: 16px;
-}
-
-/* ¿Porque no se aplica el radio a los vertices cuando se lo aplico al div que lo contiene? */
-
-.boton-secundario {
-	padding: 16px 32px;
-	background-color: var(--naranja);
-	border: solid 1px var(--naranja-oscuro);
-	border-radius: 32px;
-	text-align: center;
+#contenido-fundacion h3 {
 	color: var(--naranja-oscuro);
 }
-
+#contenido-fundacion p {
+	max-width: 600px;
+	font-size: 1.2rem;
+}
 /* FIN INDEX */
-
-
-
 /* PERRITOS */
-.perritos_main{
+.encabezado {
+	height: 200px;
+	width: 100%;
 	display: flex;
 	justify-content: center;
-	align-items: flex-start;
 }
-
-.filtro{
+.encabezado-naranja {
+	background-color: var(--naranja);
+	color: var(--naranja-oscuro);
+	border-bottom: solid 1px var(--naranja-oscuro);
+}
+.contenedor-encabezado {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	justify-content: space-between;
+	align-items: center;
+}
+.contenedor-encabezado img {
+	height: max-content;
+	position: sticky;
+	transform: translate(0, 30px) rotate(9deg);
+}
+.main-perritos {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 72px 0;
+}
+.contenedor-main-perritos {
+	display: flex;
+	gap: 24px;
+	width: 100%;
+}
+.filtros {
+	flex: 0 0 250px;
+	max-width: 300px;
+	min-width: 200px;
+	padding: 24px;
+	overflow-y: auto;
 	border-radius: 15px;
 	background: var(--amarillo);
-	width: 263px;
-	height: 960px;
-	margin: 25px;
-	display: flex;
-	padding: 27px 24px;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 48px;
-}
-
-label{
-	display: block;
-	width: auto;
-	height: 32px;
-	gap: 16px;	
-}
-
-.opciones_filtro{
+	border: solid 1px var(--amarillo-oscuro);
+	height: fit-content;
+	gap: 12px;
 	display: flex;
 	flex-direction: column;
-	gap: 16px;
-	align-items: flex-start;
 }
-
-.perfiles{
+.filtros div {
 	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	padding: 27px 24px;
-	align-items: flex-start;
-	gap:10px;
-	width: 56%;
+	flex-direction: column;
+	gap: 8px;
 }
-
+.filtros h4 {
+	margin-bottom: 12px;
+}
+.filtros h6 {
+	margin-top: 12px;
+}
+.filtros button{
+	display: flex;
+	font-family: "Dosis", sans-serif;
+	font-size: 1.05rem;
+	font-weight: 500;
+	color: var(--amarillo-oscuro);
+	background: var(--amarillo-claro);
+	width: fit-content;
+	padding: 5.72px 17.72px;
+	border-radius: 30px;
+	border: 0px;
+	margin-top: 12px;
+}
+.filtros label{
+	margin-left: 8px;
+}
+.perfiles {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+	width: 100%;
+	height: fit-content;
+}
+.perrito {
+	background-color: #fff;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: solid 1px var(--amarillo-oscuro);
+	overflow: hidden;
+	transition: all 0.3s ease;
+}
+.perrito:hover{
+		transform: scale(1.03);
+	transform-origin: center;
+}
+.perrito img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+	transform: scale(1.06); /* hay que reemplazar las imagenes por unas sin bordes redondeados tuve que aplicar un efecto de escala mientras tanto*/
+}
+.perrito h6 {
+	position: sticky;
+	bottom: 0;
+	width: 100%;
+	background: var(--azul);
+	padding: 8px 16px;
+	color: var(--azul-oscuro);
+	border-top: solid 1px var(--azul-oscuro);
+	text-align: center;
+}
 /* FIN PERRITOS */
-
-
 /* FUNDACIÓN */
-
 /* FIN FUNDACIÓN */
-
-
 /* PREGUNTAS FRECUENTES */
-
 /* FIN PREGUNTAS FRECUENTES */
-
 /* COLABORAR */
 /* FIN COLABORAR */
-
-
 /* DONAR */
-header {
-	display: flex;
-	flex-direction: column;
-}
-/*============================*/
 
+/*============================*/
 .donacion {
 	width: 100%;
 	display: flex;
@@ -364,17 +495,19 @@ header {
 	align-items: center;
 	background-color: var(--amarillo-claro);
 }
-
 .parrafodonacion {
-	max-width: 792px;
+	max-width: 650px;
 	height: 302px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	gap: 24px;
+	gap: 35px;
 	margin-left: 48px;
-	font-size: 24px;
+}
+
+.parrafodonacion h2 {
+	color: var(--naranja);
 }
 
 .boton-Donar {
@@ -385,12 +518,12 @@ header {
 	text-align: center;
 	border-radius: 30px;
 	color: white;
-	font-family: Dosis;
+	font-family: "Dosis";
 	font-size: 32px;
 	transform-origin: center;
 	padding-left: 1px;
-    padding-right: 0px;
-    padding-top: 10px;
+	padding-right: 0px;
+	padding-top: 10px;
 }
 
 .boton-Donar:hover {
@@ -432,7 +565,6 @@ border-radius: 40px;
 border: 8px solid var(--naranja);
 }
 /*============================*/
-
 .necesitamos {
 	width: 100%;
 	height: 444px;
@@ -445,7 +577,6 @@ border: 8px solid var(--naranja);
 	gap: 48px;
 	color: white;
 }
-
 .necesitamosarticulos {
 	display: flex;
 	align-items: flex-start;
@@ -455,15 +586,6 @@ border: 8px solid var(--naranja);
 	text-align: center;
 	align-self: stretch;
 }
-
-section h2 {
-	font-family: Dosis;
-	font-size: 48px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 64px;
-}
-
 section article div {
 	font-family: Dosis;
 	font-size: 32px;
@@ -471,7 +593,6 @@ section article div {
 	font-weight: 500;
 }
 /*============================*/
-
 .dinero {
 	width: 100%;
 	height: 881px;
@@ -483,7 +604,6 @@ section article div {
 	align-items: center;
 	gap: 48px;
 }
-
 .cadacentavo {
 	display: flex;
 	flex-direction: row;
@@ -496,9 +616,8 @@ section article div {
 	gap: 48px;
 	align-self: stretch;
 }
-
 .textocadacentavo {
-	width: 912px;
+	width: 650px;
 	height: 320px;
 	display: flex;
 	flex-direction: column;
@@ -506,22 +625,8 @@ section article div {
 	gap: 46px;
 }
 
-section div h2 {
+.textocadacentavo h2 {
 	color: var(--naranja);
-	font-family: Dosis;
-	font-size: 48px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 64px;
-}
-
-section div p {
-	font-family: Asap;
-	font-size: 24px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 32px;
-	letter-spacing: 0.25px;
 }
 
 .precios {
@@ -531,15 +636,12 @@ section div p {
 	align-items: center;
 	gap: 48px;
 }
-
 .monto {
 	text-align: center;
 	font-family: Dosis;
 	font-size: 40px;
 	font-weight: 600;
-	
 }
-
 .producto {
 	text-align: center;
 	font-family: Asap;
@@ -547,7 +649,6 @@ section div p {
 	font-weight: 400;
 }
 /*============================*/
-
 .medicamentos {
 	width: 100%;
 	padding: 0px 164px;
@@ -556,22 +657,26 @@ section div p {
 	background-color: var(--amarillo-claro);
 	gap: 86px;
 }
-
 .fotoytexto {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
 	gap: 48px;
 }
-
 .textomedicamentos {
-	width: 912px;
+	max-width: 650px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	gap: 32px;
+	margin-top: 30px;
+	gap: 10px;
 }
+
+.textomedicamentos h2 {
+	color: var(--naranja);
+}
+
 
 .grid-container {
 	width: 1393px;
@@ -580,7 +685,6 @@ section div p {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 48px;
 }
-
 article ul li {
 	width: 426px;
 	height: 149px;
@@ -592,13 +696,11 @@ article ul li {
 	background-color: var(--naranja);
 	box-shadow: -10px 9px 20.9px 0px rgba(29, 47, 69, 0.30);
 }
-
 .grilla-medicamentos {
 	align-items: center;
 	margin: 0px auto;
 	margin-bottom: 96px;
 }
-
 .texto-medicamento {
 	font-family: Dosis;
 	font-size: 32px;
@@ -607,14 +709,12 @@ article ul li {
 	line-height: 36px;
 	color: white;
 }
-
 .descripcion-medicamento {
 	font-family: Dosis;
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 500;
 }
-
 .flex-medicamentos {
 	display: flex;
 	flex-direction: column;
@@ -626,9 +726,9 @@ article ul li {
 
 .not-found {
 	width: 100%;
-	height: 100%;
+	padding-bottom: 12%;
 	margin: 0px auto;
-	background-color: rgb(48, 45, 45);
+	background-color: var(--naranja-claro)
 	gap: 40px;
 }
 
@@ -660,18 +760,15 @@ article ul li {
 /* Header y Footer */
 header, footer {
 	width: 100%;
-	background: rgba(174,222,224,100);
 	color: #191414;
 	display: flex;
 	justify-content: center;
 	padding: 0 20px;
+	align-items: center;
 }
-
-
 header a, footer a {
 	font-family: "Dosis", sans-serif;
 }
-
 /* Header */
 header, footer {
 	width: 100%;
@@ -679,12 +776,9 @@ header, footer {
 	justify-content: center;
 	padding: 0 20px;
 }
-
-
 header a, footer a {
 	font-family: "Dosis", sans-serif;
 }
-
 /* Header */
 header {
 	background: var(--azul);
@@ -692,29 +786,27 @@ header {
 	border-bottom: solid 1px var(--azul-oscuro);
 }
 header nav, header nav ul {
-	display: flex;	
+	display: flex;
 }
-
 header nav {
-    width: 100%;
+	width: 100%;
 	max-width: 1200px;
-    justify-content: space-between;
+	justify-content: space-between;
 	gap: 50px;
 	font-weight: 700;
 	font-size: 1.2rem;
 	margin: 12px;
 }
-
 header nav ul {
 	width: 100%;
 	justify-content: flex-end;
-    gap: 25px;
-	align-items: center;	
+	gap: 25px;
+	align-items: center;
+	flex-wrap: wrap;
 }
 header a {
 	color: var(--azul-oscuro);
 }
-
 header li a {
 	display: flex;
 	align-items: center;
@@ -723,71 +815,67 @@ header li a {
 	min-width: max-content;
 	letter-spacing: 0.03rem;
 }
-
 header li a:hover {
 	background: var(--azul-claro);
 }
-
 .boton-destacado a {
 	color: var(--naranja-oscuro);
-    background: var(--naranja);
-    border: solid 1px var(--naranja-oscuro);
+	background: var(--naranja);
+	border: solid 1px var(--naranja-oscuro);
 }
-
 .boton-destacado a:hover {
 	background: var(--amarillo);
 	color: var(--amarillo-oscuro);
-    border: solid 1px var(--amarillo-oscuro);
+	border: solid 1px var(--amarillo-oscuro);
 	transform: scale(1.03);
 	transform-origin: center;
 }
-
 /* Footer */
 footer {
 	background: var(--naranja);
 	color: var(--naranja-oscuro);
 	border-top: solid 1px var(--naranja-oscuro);
 }
-
-footer a{
+footer a {
 	color: var(--naranja-oscuro);
 }
-
 .footer-container {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 100%;
 	max-width: 1200px;
 	margin: 48px 0;
 	gap: 48px;
 }
-.site-map img{
+footer nav img {
+	width: fit-content
+}
+.site-map img {
 	margin-left: 12px;
 }
 .site-map {
-    flex-grow: 1;
+	flex-grow: 1;
 }
-
 .site-map ul {
-    display: flex;
+	display: flex;
 	margin-top: 18px;
-    flex-direction: column;
-    gap: 12px;
+	flex-direction: column;
+	gap: 12px;
 	font-size: 1.1rem;
 	font-weight: 700;
 	letter-spacing: 0.03rem;
 }
-
-.site-map a{
+.site-map a {
 	color: var(--naranja-oscuro);
 	padding: 4px 12px;
 	border-radius: 5px;
 }
-.site-map a:hover{
+.site-map a:hover {
 	background: var(--naranja-claro);
 }
 .info-contacto {
-    flex-grow: 1;
+	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
@@ -803,33 +891,30 @@ footer a{
 	background: var(--naranja-claro);
 	border-radius: 30px;
 }
-.redes-sociales a{
+.redes-sociales a {
 	display: flex;
-    align-content: center;
-
+	align-content: center;
 }
-.redes-sociales img:hover{
+.redes-sociales img:hover {
 	transform: scale(1.09);
 	transform-origin: center;
 }
 /* Formulario Footer */
 .formulario-contacto {
-    flex-grow: 1;
+	flex-grow: 1;
 	margin-top: 50px;
 }
-
 .formulario-contacto form {
 	display: flex;
 	flex-direction: column;
 	width: 500px;
 }
-
 .formulario-contacto input, .formulario-contacto textarea {
-    margin-bottom: 12px;
-    height: 40px;
-    border: 1px solid var(--amarillo-oscuro);
-    border-radius: 14px;
-    padding: 14px;
+	margin-bottom: 12px;
+	height: 40px;
+	border: 1px solid var(--amarillo-oscuro);
+	border-radius: 14px;
+	padding: 14px;
 }
 .formulario-contacto textarea {
 	min-width: 500px;
@@ -837,16 +922,13 @@ footer a{
 	min-height: 60px;
 	max-height: 120px;
 }
-
 textarea#mensaje, input#nombre, input#correo {
-    font-family: "Asap", sans-serif;
+	font-family: "Asap", sans-serif;
 	font-size: 0.9rem;
 }
-
 ::placeholder, ::-ms-input-placeholder {
-  color: var(--gris-claro);
+	color: var(--gris-claro);
 }
-
 .formulario-contacto button {
 	padding: 8px 20px;
 	border: none;
@@ -860,9 +942,171 @@ textarea#mensaje, input#nombre, input#correo {
 	letter-spacing: 0.03rem;
 	border: 1px solid var(--amarillo-oscuro);
 }
-
 .formulario-contacto button:hover {
-	background: var(--amarillo-claro);
+	background-color: var(--amarillo-claro);
 	transform: scale(1.03);
 	transform-origin: center;
+}
+
+/*@MEDIA*/
+
+@media screen and (max-width: 850px) {
+
+	#botonera-index-contenedor {
+		gap: 16px;
+	}
+
+	#contenido-fundacion {
+		flex-direction: column;
+	}
+
+	#contenedor-info-fundacion {
+		gap: 32px;
+	}
+
+	#contenedor-img-fundacion {
+		overflow: hidden;
+		width: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url(img/quienessomos1.png);
+	}
+
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+	html {
+		font-size: 110%;
+	}
+	
+	/* Header y Footer */
+
+	header {
+		padding: 24px;
+	}
+
+	header nav, header nav ul {
+		flex-direction: column;
+
+	}
+
+	header nav {
+		align-items: center;
+	}
+
+	header li a {
+		display: flex;
+		align-items: center;
+		border-radius: 5px;
+		padding: 8px 20px;
+		min-width: max-content;
+		letter-spacing: 0.03rem;
+	}
+
+
+	/* Footer */
+
+	.footer-container {
+		flex-direction: column;
+	}
+
+	.site-map ul {
+		gap: 24px;
+	}
+
+	.info-contacto {
+		align-items: center;
+		max-width: 600px;
+	}
+
+	.redes-sociales {
+		gap: 24px;
+	}
+
+	/* Formulario Footer */
+
+	.formulario-contacto form {
+		width: 100%;
+		gap: 16px;
+	}
+
+	.formulario-contacto input, .formulario-contacto textarea {
+		height: 56px;
+		width: 100%;
+		min-width: 100%;
+	}
+
+	.formulario-contacto textarea {
+		height: 152px;
+	}
+
+	.datos {
+		width: 100%;
+		display: flex;
+		gap: 16px;
+		justify-content: center;
+		text-align: center;
+		flex-direction: column;
+		margin: 48px 0px;
+	}
+
+	/*INDEX*/
+
+	#cover video {
+		display: none;
+	}
+
+	#cover {
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+		padding: 56px 24px;
+	}
+
+	#contenido-cover {
+		width: 100%;
+		flex-direction: column;
+		padding: 32px 24px;
+	}
+
+	#botonera-index {
+		justify-content: center;
+		margin: 100px 0px;
+		padding: 0 24px;
+	}
+
+	#botonera-index-contenedor {
+		flex-wrap: wrap;
+		justify-content: center;
+		position: relative;
+		top: 50%;
+		width: 100%;
+	}
+	#botonera-index a {
+		width: 100%;
+	}
+	
+	#cifras-de-exito {
+		flex-direction: column;
+		gap: 48px;
+	}
+
+	#sobre-la-fundacion {
+		padding: 0 24px;
+	}
+
+	#contenido-fundacion {
+		flex-direction: column;
+	}
+
+	#contenedor-info-fundacion {
+		gap: 32px;
+	}
+
+	/* FIN INDEX */
 }
