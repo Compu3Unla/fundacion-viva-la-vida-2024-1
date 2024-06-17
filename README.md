@@ -8,7 +8,7 @@ La distribución de tareas fue:
 
 Belardo: Index (HTML y CSS)- Resolución  1366x768 - Editor Visual Studio Code.
 
-Díaz: Header y footer; Cohesión de estilos entre páginas- Resolución  1920x1080- Editor Dreamweaver.
+Díaz: Header y footer, Cohesión de estilos entre páginas, correciones generales en CSS y HTML- Resolución  1920x1080- Editor Dreamweaver.
 
 Pereyra: Donar (HTML y CSS)- Resolución 1920x1980- Editor Visual Studio Code.
 
