@@ -24,6 +24,7 @@ class customheader extends HTMLElement{
 
 		    <ul>
 			    <li><a href="perritos.html" target="_self">Perritos</a></li>
+
 			    <li><a href="pagenotfound.html" target="_self">Sobre la fundación</a></li>
 			    <li><a href="pagenotfound.html" target="_self">Preguntas frecuentes</a></li>
 			    <li><a href="pagenotfound.html" target="_self">Colaborar</a></li>
