@@ -44,7 +44,7 @@ a, button, img {
 }
 h1 {
 	font-family: "Dosis", sans-serif;
-	font-size: 2.986rem;
+	font-size: 6.51rem;
 }
 h2 {
 	font-family: "Dosis", sans-serif;
@@ -84,7 +84,6 @@ main {
 	align-items: center;
 	flex-direction: column;
 }
-
 .boton-primario {
 	font-family: "Dosis", sans-serif;
 	font-size: 1.44rem;
@@ -106,6 +105,71 @@ main {
 	border-radius: 32px;
 	text-align: center;
 	color: var(--naranja-oscuro);
+}
+.boton-primario:hover {
+	transform: scale(1.03);
+	transform-origin: center;
+}
+.boton-secundario:hover {
+	transform: scale(1.03);
+	transform-origin: center;
+}
+.hover-escala-3 a:hover, .hover-escala-3 button:hover, .hover-escala-3-div div:hover {
+	transform: scale(1.03);
+	transform-origin: center;
+}
+.hover-escala-9 a:hover {
+	transform: scale(1.09);
+	transform-origin: center;
+}
+.ancho-max {
+	padding: 0 48px;
+	max-width: 1392px;
+}
+.caja-img-texto {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 0 48px;
+	max-width: 1392px;
+}
+.contenido-caja-img-texto {
+	display: flex;
+	border-radius: 16px;
+	border: solid 1px var(--naranja-oscuro);
+	background-color: var(--amarillo);
+	overflow: hidden;
+	width: 100%;
+}
+.contenedor-caja-img {
+	overflow: hidden;
+	width: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-right: solid 1px var(--naranja-oscuro);
+}
+.contenedor-caja-texto {
+	flex: 1.2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 48px;
+	gap: 48px;
+}
+.caja-img-texto article {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+.caja-img-texto h3 {
+	color: var(--naranja-oscuro);
+}
+.caja-img-texto p {
+	max-width: 600px;
+	font-size: 1.2rem;
 }
 /* INDEX */
 #index-main {
@@ -135,20 +199,20 @@ main {
 	align-items: center;
 	background-color: var(--amarillo);
 	border: solid 1px var(--amarillo-oscuro);
-	border-radius: 44.6px;
+	border-radius: 40px;
 	padding: 24px;
 	position: relative;
 	z-index: 1;
 	gap: 48px;
 }
 #cover-background {
-	position: absolute; /* me parece mejor este atributo en lugar de fixed para que el video se desplace normalmente junto al contenido */
+	position: absolute;
 	z-index: -1;
 	top: 50%;
 	left: 50%;
 	width: 100%;
 	height: 100%;
-	object-fit: cover; /* hice ajustes ya que una parte del video se tapaba por el navegador del header */
+	object-fit: cover;
 	transform: translate(-50%, -50%);
 }
 #contenido-cover div {
@@ -159,7 +223,7 @@ main {
 	gap: 32px;
 	padding-left: 16px;
 }
-.contenido-img { /*le puse un class a la imagen para el borde*/
+.contenido-img {
 	border: solid 1px var(--amarillo-oscuro);
 	border-radius: 16px;
 }
@@ -193,7 +257,7 @@ main {
 	z-index: 1;
 	transform: translate(0, -50%);
 	width: 100%;
-	display: flex; 
+	display: flex;
 	justify-content: center;
 }
 #botonera-index-contenedor {
@@ -208,6 +272,9 @@ main {
 	font-size: 1.5rem;
 	text-align: center;
 	border-radius: 16px;
+	font-family: "Dosis", sans-serif;
+	font-size: 2.074rem;
+	font-weight: 700;
 }
 .boton-index-1 {
 	color: var(--amarillo-oscuro);
@@ -230,6 +297,9 @@ main {
 	flex-direction: column;
 	align-items: center;
 	gap: 72px;
+}
+#previsualizar-perritos h2 {
+	color: var(--amarillo-oscuro)
 }
 /* SLIDE PERRITOS */
 .slider-perritos {
@@ -275,7 +345,7 @@ main {
 }
 .item-perrito:nth-of-type(3n) h6 {
 	background-color: var(--azul);
-} /* se me ocurrió poner un color de fondo diferente a cada perrito pero capaz no queda muy bien porque ya arriba se repiten lo tres colores en los botones, que opinan? */
+}
 @keyframes slide-left {
 	0% {
 		transform: translateX(0);
@@ -316,60 +386,16 @@ main {
 	max-width: 150px;
 	text-align: left;
 }
-#sobre-la-fundacion {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	padding: 0 48px;
-	max-width: 1392px;
-}
-#contenido-fundacion {
-	display: flex;
-	border-radius: 16px;
-	border: solid 1px var(--naranja-oscuro);
-	background-color: var(--amarillo);
-	overflow: hidden;
-	width: 100%;
-}
 #contenedor-img-fundacion {
-	overflow: hidden;
-	width: 50%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 	background-image: url(img/index/quienessomos.png);
-}
-#contenedor-info-fundacion {
-	flex: 1.2;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: flex-start;
-	padding: 48px;
-	gap: 48px;
-}
-#contenido-fundacion article {
-	display: flex;
-	flex-direction: column;
-	gap: 24px;
-}
-#contenido-fundacion h3 {
-	color: var(--naranja-oscuro);
-}
-#contenido-fundacion p {
-	max-width: 600px;
-	font-size: 1.2rem;
 }
 /* FIN INDEX */
 /* PERRITOS */
 .encabezado {
-	height: 200px;
+	height: 400px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
-}
-.encabezado-naranja {
 	background-color: var(--naranja);
 	color: var(--naranja-oscuro);
 	border-bottom: solid 1px var(--naranja-oscuro);
@@ -385,7 +411,7 @@ main {
 .contenedor-encabezado img {
 	height: max-content;
 	position: sticky;
-	transform: translate(0, 30px) rotate(9deg);
+	transform: translate(0, 80px) rotate(9deg) scaleX(-1);
 }
 .main-perritos {
 	width: 100%;
@@ -423,7 +449,7 @@ main {
 .filtros h6 {
 	margin-top: 12px;
 }
-.filtros button{
+.filtros button {
 	display: flex;
 	font-family: "Dosis", sans-serif;
 	font-size: 1.05rem;
@@ -436,7 +462,7 @@ main {
 	border: 0px;
 	margin-top: 12px;
 }
-.filtros label{
+.filtros label {
 	margin-left: 8px;
 }
 .perfiles {
@@ -452,19 +478,15 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border: solid 1px var(--amarillo-oscuro);
+	border: solid 1px var(--azul-oscuro);
 	overflow: hidden;
 	transition: all 0.3s ease;
-}
-.perrito:hover{
-		transform: scale(1.03);
-	transform-origin: center;
 }
 .perrito img {
 	max-width: 100%;
 	height: auto;
 	border-radius: 8px;
-	transform: scale(1.06); /* hay que reemplazar las imagenes por unas sin bordes redondeados tuve que aplicar un efecto de escala mientras tanto*/
+	transform: scale(1.06);
 }
 .perrito h6 {
 	position: sticky;
@@ -477,185 +499,108 @@ main {
 	text-align: center;
 }
 /* FIN PERRITOS */
-/* FUNDACIÓN */
-/* FIN FUNDACIÓN */
-/* PREGUNTAS FRECUENTES */
-/* FIN PREGUNTAS FRECUENTES */
 /* COLABORAR */
 /* FIN COLABORAR */
 /* DONAR */
-
-/*============================*/
-.donacion {
+#main-donar {
 	width: 100%;
 	display: flex;
-	justify-content: center;
-	padding: 154px 264px;
-	align-items: center;
-	background-color: var(--amarillo-claro);
-}
-.parrafodonacion {
-	max-width: 650px;
-	height: 302px;
-	display: flex;
 	flex-direction: column;
+	align-items: center;
+	padding: 72px 0;
+	gap: 132px;
+}
+#contenedor-img-donacion {
+	background-image: url(img/donar/foto_donar.png);
+}
+#contenido-donar-dinero {
+	background: none;
+	border: none;
+}
+.contenedor-caja-icono {
+	overflow: hidden;
+	width: 35%;
+	display: flex;
 	justify-content: center;
-	align-items: flex-start;
-	gap: 35px;
+	align-items: center;
 	margin-left: 48px;
 }
-
-.parrafodonacion h2 {
-	color: var(--naranja);
-}
-.botonprimario {}
-
-.boton-Donar {
-	width: 360px;
-	height: 64px;
-	background-color: var(--naranja);
-	padding: 16px 48px;
-	text-align: center;
-	border-radius: 30px;
-	color: white;
-	font-family: "Dosis";
-	font-size: 32px;
-	transform-origin: center;
-	padding-left: 1px;
-	padding-right: 0px;
-	padding-top: 10px;
-}
-
-.boton-Donar:hover {
-	background-color: var(--naranja-oscuro);
-}
-
-.boton-Donar:active {
-	background-color: var(--naranja-claro);
-	color: var(--naranja-oscuro);
-}
-
-.boton-Donar2 {
-	width: 360px;
-	height: 64px;
-	background-color: var(--naranja);
-	padding: 16px 48px;
-	text-align: center;
-	border-radius: 30px;
-	color: white;
-	font-family: Dosis;
-	font-size: 28px;
-	transform-origin: center;
-	padding-left: 1px;
-    padding-right: 0px;
-    padding-top: 10px;
-}
-
-.boton-Donar2:hover {
-	background-color: var(--naranja-oscuro);
-}
-
-.boton-Donar2:active {
-	background-color: var(--naranja-claro);
-	color: var(--naranja-oscuro);
-}
-
-.foto_Donar {
-border-radius: 40px; 
-border: 8px solid var(--naranja);
-}
-/*============================*/
-.necesitamos {
+#que-necesitamos {
 	width: 100%;
-	height: 444px;
-	background-color: var(--naranja);
-	display: flex;
-	padding: 80px 264px;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 48px;
-	color: white;
-}
-.necesitamosarticulos {
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	gap: 80px;
-	font-size: 32px;
-	text-align: center;
-	align-self: stretch;
-}
-section article div {
-	font-family: Dosis;
-	font-size: 32px;
-	font-style: normal;
-	font-weight: 500;
-}
-/*============================*/
-.dinero {
-	width: 100%;
-	height: 881px;
 	display: flex;
 	flex-direction: column;
-	background-color: var(--amarillo-claro);
-	padding: 0px 264px;
-	justify-content: center;
 	align-items: center;
-	gap: 48px;
+	justify-content: space-evenly;
+	padding: 48px 0;
+	background-color: var(--naranja);
+	color: var(--naranja-oscuro);
+	font-size: 2rem;
+	border-top: solid 1px var(--naranja-oscuro);
+	border-bottom: solid 1px var(--naranja-oscuro);
+	gap: 24px;
 }
-.cadacentavo {
+.item-necesitamos {
 	display: flex;
 	flex-direction: row;
-	padding-top: 68px;
-	width: 1392px;
-	height: 440px;
-	margin: 0px auto;
-	justify-content: center;
 	align-items: center;
-	gap: 48px;
-	align-self: stretch;
+	gap: 72px;
 }
-.textocadacentavo {
-	width: 650px;
-	height: 320px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 46px;
-}
-
-.textocadacentavo h2 {
-	color: var(--naranja);
-}
-
-.precios {
-	display: flex;
-	height: 250px;
-	justify-content: center;
-	align-items: center;
-	gap: 48px;
-}
-.monto {
-	text-align: center;
-	font-family: Dosis;
-	font-size: 40px;
+.item-necesitamos p {
+	font-family: "Dosis", sans-serif;
+	font-size: 2.074rem;
 	font-weight: 600;
 }
-.producto {
-	text-align: center;
-	font-family: Asap;
-	font-size: 25px;
-	font-weight: 400;
-}
-/*============================*/
-.medicamentos {
+#precios {
 	width: 100%;
-	padding: 0px 164px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 48px 0;
+	background-color: var(--amarillo);
+	color: var(--amarillo-oscuro);
+	font-size: 2rem;
+	text-align: center;
+	border-top: solid 1px var(--amarillo-oscuro);
+	border-bottom: solid 1px var(--amarillo-oscuro);
+}
+.item-precios {
 	display: flex;
 	flex-direction: column;
-	background-color: var(--amarillo-claro);
-	gap: 86px;
+	align-items: center;
+	gap: 12px;
+}
+.cifra-precios {
+	font-family: "Dosis", sans-serif;
+	font-size: 2.66rem;
+	font-weight: 700;
+}
+.dato-precios {
+	font-family: "Dosis", sans-serif;
+	font-weight: 500;
+	font-size: 1.66rem;
+	max-width: 190px;
+	text-align: center;
+}
+#section-medicamentos {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+#contenedor-img-medicamentos {
+	background-image: url(img/donar/farma-vet.jpg);
+}
+#contenido-medicamentos {
+	background-color: var(--azul);
+	border-color: var(--azul-oscuro);
+}
+#contenido-medicamentos h3 {
+	color: var(--azul-oscuro);
+}
+#contenido-medicamentos .boton-secundario {
+	background-color: var(--amarillo);
+	border: solid 1px var(--amarillo-oscuro);
+	color: var(--amarillo-oscuro);
 }
 .fotoytexto {
 	display: flex;
@@ -672,65 +617,63 @@ section article div {
 	margin-top: 30px;
 	gap: 10px;
 }
-
-.textomedicamentos h2 {
-	color: var(--naranja);
-}
-
 .grid-container {
-	width: 1393px;
-	height: 1134px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 48px;
+	grid-gap: 24px;
 }
-article ul li {
-	width: 426px;
-	height: 149px;
+#medicamentos-grilla ul li {
 	display: flex;
 	padding: 24px;
 	align-items: flex-start;
 	gap: 24px;
-	border-radius: 24px;
-	background-color: var(--naranja);
-	box-shadow: -10px 9px 20.9px 0px rgba(29, 47, 69, 0.30);
-}
-.grilla-medicamentos {
-	align-items: center;
-	margin: 0px auto;
-	margin-bottom: 96px;
+	border-radius: 16px;
+	border: solid 1px var(--naranja-oscuro);
 }
 .texto-medicamento p {
 	font-family: Dosis;
 	font-size: 24px;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 700;
 	line-height: 36px;
-	color: white;
 }
-.descripcion-medicamento p {
-	font-family: Dosis;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 500;
+#medicamentos-grilla img {
+	border-radius: 16px;
+	padding: 8px;
 }
 .flex-medicamentos {
 	display: flex;
 	flex-direction: column;
 }
+.grid-container li:nth-child(9n + 1), .grid-container li:nth-child(9n + 2), .grid-container li:nth-child(9n + 3) {
+	background-color: var(--amarillo);
+	color: var(--amarillo-oscuro);
+}
+.grid-container li:nth-child(9n + 1) img, .grid-container li:nth-child(9n + 2) img, .grid-container li:nth-child(9n + 3) img {
+	background-color: var(--amarillo-claro);
+}
+.grid-container li:nth-child(9n + 4), .grid-container li:nth-child(9n + 5), .grid-container li:nth-child(9n + 6) {
+	background-color: var(--naranja);
+	color: var(--naranja-oscuro);
+}
+.grid-container li:nth-child(9n + 4) img, .grid-container li:nth-child(9n + 5) img, .grid-container li:nth-child(9n + 6) img {
+	background-color: var(--naranja-claro);
+}
+.grid-container li:nth-child(9n + 7), .grid-container li:nth-child(9n + 8), .grid-container li:nth-child(9n + 9) {
+	background-color: var(--azul);
+	color: var(--azul-oscuro);
+}
+.grid-container li:nth-child(9n + 7) img, .grid-container li:nth-child(9n + 8) img, .grid-container li:nth-child(9n + 9) img {
+	background-color: var(--azul-claro);
+}
 /* FIN DONAR*/
-
-
 /* Page not found */
-
 .not-found {
 	width: 100%;
 	padding-bottom: 12%;
 	margin: 0px auto;
-	background-color: var(--naranja-claro)
-	gap: 40px;
+	background-color: var(--naranja-claro) gap: 40px;
 }
-
 .mensaje-not-found {
 	display: flex;
 	flex-direction: column;
@@ -741,21 +684,15 @@ article ul li {
 	color: var(--naranja);
 	font-size: 2em;
 }
-
 .salchichin {
 	animation: salchicha 3s linear infinite;
-    }
-
-@keyframes salchicha {
-    0% {
-        transform: rotate(-360deg);
-    }
 }
-
-
+@keyframes salchicha {
+	0% {
+		transform: rotate(-360deg);
+	}
+}
 /* Fin Page not found */
-
-
 /* Header y Footer */
 header, footer {
 	width: 100%;
@@ -826,8 +763,6 @@ header li a:hover {
 	background: var(--amarillo);
 	color: var(--amarillo-oscuro);
 	border: solid 1px var(--amarillo-oscuro);
-	transform: scale(1.03);
-	transform-origin: center;
 }
 /* Footer */
 footer {
@@ -870,7 +805,7 @@ footer nav img {
 	padding: 4px 12px;
 	border-radius: 5px;
 }
-.site-map a:hover {
+.site-map li a:hover {
 	background: var(--naranja-claro);
 }
 .info-contacto {
@@ -893,10 +828,6 @@ footer nav img {
 .redes-sociales a {
 	display: flex;
 	align-content: center;
-}
-.redes-sociales img:hover {
-	transform: scale(1.09);
-	transform-origin: center;
 }
 /* Formulario Footer */
 .formulario-contacto {
@@ -942,27 +873,21 @@ textarea#mensaje, input#nombre, input#correo {
 	border: 1px solid var(--amarillo-oscuro);
 }
 .formulario-contacto button:hover {
-	background-color: var(--amarillo-claro);
-	transform: scale(1.03);
-	transform-origin: center;
+	background-color: var(--azul-claro);
+	color: var(--azul-oscuro);
+	border: 1px solid var(--azul-oscuro);
 }
-
 /*@MEDIA*/
-
 @media screen and (max-width: 850px) {
-
 	#botonera-index-contenedor {
 		gap: 16px;
 	}
-
 	#contenido-fundacion {
 		flex-direction: column;
 	}
-
 	#contenedor-info-fundacion {
 		gap: 32px;
 	}
-
 	#contenedor-img-fundacion {
 		overflow: hidden;
 		width: 100%;
@@ -971,33 +896,21 @@ textarea#mensaje, input#nombre, input#correo {
 		background-size: cover;
 		background-image: url(img/quienessomos1.png);
 	}
-
 }
-
-
-
-
 @media screen and (max-width: 600px) {
-
 	html {
 		font-size: 110%;
 	}
-	
 	/* Header y Footer */
-
 	header {
 		padding: 24px;
 	}
-
 	header nav, header nav ul {
 		flex-direction: column;
-
 	}
-
 	header nav {
 		align-items: center;
 	}
-
 	header li a {
 		display: flex;
 		align-items: center;
@@ -1006,44 +919,33 @@ textarea#mensaje, input#nombre, input#correo {
 		min-width: max-content;
 		letter-spacing: 0.03rem;
 	}
-
-
 	/* Footer */
-
 	.footer-container {
 		flex-direction: column;
 	}
-
 	.site-map ul {
 		gap: 24px;
 	}
-
 	.info-contacto {
 		align-items: center;
 		max-width: 600px;
 	}
-
 	.redes-sociales {
 		gap: 24px;
 	}
-
 	/* Formulario Footer */
-
 	.formulario-contacto form {
 		width: 100%;
 		gap: 16px;
 	}
-
 	.formulario-contacto input, .formulario-contacto textarea {
 		height: 56px;
 		width: 100%;
 		min-width: 100%;
 	}
-
 	.formulario-contacto textarea {
 		height: 152px;
 	}
-
 	.datos {
 		width: 100%;
 		display: flex;
@@ -1053,32 +955,26 @@ textarea#mensaje, input#nombre, input#correo {
 		flex-direction: column;
 		margin: 48px 0px;
 	}
-
 	/*INDEX*/
-
 	#cover video {
 		display: none;
 	}
-
 	#cover {
 		width: 100%;
 		height: 100%;
 		justify-content: center;
 		padding: 56px 24px;
 	}
-
 	#contenido-cover {
 		width: 100%;
 		flex-direction: column;
 		padding: 32px 24px;
 	}
-
 	#botonera-index {
 		justify-content: center;
 		margin: 100px 0px;
 		padding: 0 24px;
 	}
-
 	#botonera-index-contenedor {
 		flex-wrap: wrap;
 		justify-content: center;
@@ -1089,23 +985,14 @@ textarea#mensaje, input#nombre, input#correo {
 	#botonera-index a {
 		width: 100%;
 	}
-	
-	#cifras-de-exito {
-		flex-direction: column;
-		gap: 48px;
-	}
-
 	#sobre-la-fundacion {
 		padding: 0 24px;
 	}
-
 	#contenido-fundacion {
 		flex-direction: column;
 	}
-
 	#contenedor-info-fundacion {
 		gap: 32px;
 	}
-
 	/* FIN INDEX */
 }

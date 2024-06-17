@@ -19,15 +19,15 @@ class customheader extends HTMLElement{
         this.innerHTML += ` 
         <header>
 	        <nav>
-			<a href="index.html" target="_self"><img src="img/logos/logo-azul.svg" width="174.25px" height="50px" alt="Logo de Fundación Viva la Vida">
+			<a href="index.html"><img src="img/logos/logo-azul.svg" width="174.25px" height="50px" alt="Logo de Fundación Viva la Vida">
 			</a>
 
 		    <ul>
 			    <li><a href="perritos.html" target="_self">Perritos</a></li>
-			    <li><a href="pagenotfound.html" target="_self">Sobre la fundación</a></li>
+			    <li><a href="index.html#sobre-la-fundacion" target="_self">Sobre la fundación</a></li>
 			    <li><a href="pagenotfound.html" target="_self">Preguntas frecuentes</a></li>
 			    <li><a href="pagenotfound.html" target="_self">Colaborar</a></li>
-			    <li class="boton-destacado"><a href="donar.html" target="_self">Donar</a></li>
+			    <li class="boton-destacado hover-escala-3"><a href="donar.html" target="_self">Donar</a></li>
 		    </ul>
 	        </nav>
         </header>
@@ -62,17 +62,17 @@ class customfooter extends HTMLElement{
         <footer>
 	        <div class="footer-container">
 		    <section class="site-map">
-			    <nav> <img src="img/logos/isotipo-naranja.svg" width="174.25px" height="50px" alt="Logo de Fundación Viva la Vida">
+			    <nav> <a href="index.html"><img src="img/logos/isotipo-naranja.svg" width="174.25px" height="50px" alt="Logo de Fundación Viva la Vida"></a>
 				<ul>
-					<li><a href="/perritos.html" target="_self">Perritos</a></li>
-					<li><a href="sobre-fundacion.html" target="_self">Sobre la fundación</a></li>
-					<li><a href="/preguntas-frecuentes.html" target="_self">Preguntas frecuentes</a></li>
-					<li><a href="/colaborar.html" target="_self">Colaborar</a></li>
-					<li><a href="/donar.html" target="_self">Donar</a></li>
+			    <li><a href="perritos.html">Perritos</a></li>
+			    <li><a href="index.html#sobre-la-fundacion">Sobre la fundación</a></li>
+			    <li><a href="pagenotfound.html">Preguntas frecuentes</a></li>
+			    <li><a href="pagenotfound.html">Colaborar</a></li>
+			    <li><a href="donar.html">Donar</a></li>
 				</ul>
 			    </nav>
 		    </section>
-		    <section class="formulario-contacto">
+		    <section class="formulario-contacto hover-escala-3">
 			    <form method="post" action="" target="_blank" enctype="text/plain">
 					<input type="text" id="nombre" name="nombre" maxlength="30" placeholder="Nombre" required>
 
@@ -84,12 +84,12 @@ class customfooter extends HTMLElement{
 			    </form>
 		    </section>
 		    <section class="info-contacto">
-			    <div class="redes-sociales"> 
-					<a href="#" target="_blank"><img src="img/iconos/instagram.svg" width="48px" height="48px" alt="Logo de Instagram"></a>
+			    <div class="redes-sociales hover-escala-9"> 
+					<a href="#" target="_blank"><img src="img/iconos/instagram.svg" width="38px" height="38px" alt="Logo de Instagram"></a>
 					
-					<a href="#" target="_blank"><img src="img/iconos/facebook.svg" width="48px" height="48px" alt="Logo de Facebook"></a>
+					<a href="#" target="_blank"><img src="img/iconos/facebook.svg" width="38px" height="38px" alt="Logo de Facebook"></a>
 					
-					<a href="#" target="_blank"><img src="img/iconos/whatsapp.svg" width="48px" height="48px" alt="Logo de WhatsApp"></a>
+					<a href="#" target="_blank"><img src="img/iconos/whatsapp.svg" width="38px" height="38px" alt="Logo de WhatsApp"></a>
 				</div>
 
 			    <div class="datos">
