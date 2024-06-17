@@ -6,10 +6,10 @@ Por otro lado a medida que fuimos trabajando van apareciendo problemas o cosas r
 
 La distribución de tareas fue: 
 
-Belardo: Index (HTML y CSS)
+Belardo: Index (HTML y CSS)- Resolución  1366x768 - Editor Visual Studio Code.
 
-Díaz: Header y footer; Cohesión de estilos entre páginas.
+Díaz: Header y footer; Cohesión de estilos entre páginas- Resolución  1920x1080- Editor Dreamweaver.
 
-Pereyra: Donar (HTML y CSS)- Resolución 1920x1980
+Pereyra: Donar (HTML y CSS)- Resolución 1920x1980- Editor Visual Studio Code.
 
-Pico: Perritos (HTML y CSS)- Resolución  1366x768
+Pico: Perritos (HTML y CSS)- Resolución  1366x768- Editor Dreamweaver.
