@@ -397,7 +397,6 @@ main {
 .contenedor-main-perritos {
 	display: flex;
 	gap: 24px;
-	width: 100%;
 }
 .filtros {
 	flex: 0 0 250px;
