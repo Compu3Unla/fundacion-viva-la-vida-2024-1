@@ -7,6 +7,9 @@ Por otro lado a medida que fuimos trabajando van apareciendo problemas o cosas r
 La distribución de tareas fue: 
 
 Belardo: Index (HTML y CSS)
+
 Díaz: Header y footer; Cohesión de estilos entre páginas.
-Pereyra: Donar (HTML y CSS)
-Pico: Perritos (HTML y CSS)
+
+Pereyra: Donar (HTML y CSS)- Resolución 1920x1980
+
+Pico: Perritos (HTML y CSS)- Resolución  1366x768
