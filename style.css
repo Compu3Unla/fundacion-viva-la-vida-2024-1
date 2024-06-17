@@ -484,8 +484,9 @@ main {
 /* FIN PREGUNTAS FRECUENTES */
 /* COLABORAR */
 /* FIN COLABORAR */
-/* DONAR */
 
+
+/* DONAR */
 /*============================*/
 .donacion {
 	width: 100%;
@@ -701,15 +702,15 @@ article ul li {
 	margin: 0px auto;
 	margin-bottom: 96px;
 }
-.texto-medicamento {
+.texto-medicamento p {
 	font-family: Dosis;
-	font-size: 32px;
+	font-size: 24px;
 	font-style: normal;
 	font-weight: 500;
 	line-height: 36px;
 	color: white;
 }
-.descripcion-medicamento {
+.descripcion-medicamento p {
 	font-family: Dosis;
 	font-size: 20px;
 	font-style: normal;
