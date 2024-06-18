@@ -327,6 +327,7 @@ main {
 	overflow: hidden;
 	border-radius: 16px;
 	border: solid 1px var(--negro);
+	cursor: pointer;
 }
 .item-perrito h6 {
 	position: sticky;
@@ -334,17 +335,21 @@ main {
 	width: 100%;
 	background: var(--naranja);
 	padding: 8px 16px;
-	color: var(--negro);
-	border-top: solid 1px var(--naranja-oscuro);
 }
 .item-perrito:nth-of-type(3n + 1) h6 {
 	background-color: var(--amarillo);
+	color: var(--amarillo-oscuro);
+	border-top: solid 1px var(--amarillo-oscuro);
 }
 .item-perrito:nth-of-type(3n + 2) h6 {
 	background-color: var(--naranja);
+	color: var(--naranja-oscuro);
+	border-top: solid 1px var(--naranja-oscuro);
 }
 .item-perrito:nth-of-type(3n) h6 {
 	background-color: var(--azul);
+	color: var(--azul-oscuro);
+	border-top: solid 1px var(--azul-oscuro);
 }
 @keyframes slide-left {
 	0% {
@@ -382,9 +387,10 @@ main {
 .dato {
 	font-family: "Dosis", sans-serif;
 	font-weight: 500;
-	font-size: 1.66rem;
+	font-size: 1.5rem;
 	max-width: 150px;
 	text-align: left;
+	line-height: 1.85rem;
 }
 #contenedor-img-fundacion {
 	background-image: url(img/index/quienessomos.png);
@@ -465,28 +471,29 @@ main {
 .filtros label {
 	margin-left: 8px;
 }
+.lista-perritos {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	align-items: center;
+}
 .perfiles {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 24px;
 	width: 100%;
-	height: fit-content;
 }
 .perrito {
-	background-color: #fff;
 	border-radius: 8px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	border: solid 1px var(--azul-oscuro);
 	overflow: hidden;
 	transition: all 0.3s ease;
+	height: fit-content;
 }
 .perrito img {
 	max-width: 100%;
 	height: auto;
-	border-radius: 8px;
-	transform: scale(1.06);
+	transform: scale(1.04);
 }
 .perrito h6 {
 	position: sticky;
@@ -500,6 +507,55 @@ main {
 }
 /* FIN PERRITOS */
 /* COLABORAR */
+.main-colaborar {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 72px 0;
+	gap: 132px;
+}
+.formas-colaborar {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+	align-items: center;
+}
+.colaborar-contenido {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.item-colaborar {
+    border-radius: 8px;
+    border: solid 1px var(--amarillo-oscuro);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: fit-content;
+    width: 30%;
+}
+.item-colaborar img {
+	max-width: 100%;
+	height: auto;
+	transform: scale(1.04);
+}
+.item-colaborar h4 {
+	position: sticky;
+	bottom: 0;
+	width: 100%;
+	background: var(--amarillo);
+	padding: 16px 16px;
+	color: var(--amarillo-oscuro);
+	border-top: solid 1px var(--amarillo-oscuro);
+	text-align: center;
+}
+#dudas{
+	font-size: 1.728rem;
+}
 /* FIN COLABORAR */
 /* DONAR */
 #main-donar {
@@ -871,6 +927,7 @@ textarea#mensaje, input#nombre, input#correo {
 	color: var(--amarillo-oscuro);
 	letter-spacing: 0.03rem;
 	border: 1px solid var(--amarillo-oscuro);
+	cursor: pointer;
 }
 .formulario-contacto button:hover {
 	background-color: var(--azul-claro);

@@ -26,7 +26,7 @@ class customheader extends HTMLElement{
 			    <li><a href="perritos.html" target="_self">Perritos</a></li>
 			    <li><a href="index.html#sobre-la-fundacion" target="_self">Sobre la fundación</a></li>
 			    <li><a href="pagenotfound.html" target="_self">Preguntas frecuentes</a></li>
-			    <li><a href="pagenotfound.html" target="_self">Colaborar</a></li>
+			    <li><a href="colaborar.html" target="_self">Colaborar</a></li>
 			    <li class="boton-destacado hover-escala-3"><a href="donar.html" target="_self">Donar</a></li>
 		    </ul>
 	        </nav>
@@ -67,7 +67,7 @@ class customfooter extends HTMLElement{
 			    <li><a href="perritos.html">Perritos</a></li>
 			    <li><a href="index.html#sobre-la-fundacion">Sobre la fundación</a></li>
 			    <li><a href="pagenotfound.html">Preguntas frecuentes</a></li>
-			    <li><a href="pagenotfound.html">Colaborar</a></li>
+			    <li><a href="colaborar.html">Colaborar</a></li>
 			    <li><a href="donar.html">Donar</a></li>
 				</ul>
 			    </nav>
