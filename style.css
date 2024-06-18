@@ -522,21 +522,20 @@ main {
 	align-items: center;
 }
 .colaborar-contenido {
-    display: flex;
-    gap: 24px;
-    width: 100%;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+	display: flex;
+	gap: 24px;
+	width: 100%;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
 }
-
 .item-colaborar {
-    border-radius: 8px;
-    border: solid 1px var(--amarillo-oscuro);
-    overflow: hidden;
-    transition: all 0.3s ease;
-    height: fit-content;
-    width: 30%;
+	border-radius: 8px;
+	border: solid 1px var(--amarillo-oscuro);
+	overflow: hidden;
+	transition: all 0.3s ease;
+	height: fit-content;
+	width: 30%;
 }
 .item-colaborar img {
 	max-width: 100%;
@@ -553,7 +552,7 @@ main {
 	border-top: solid 1px var(--amarillo-oscuro);
 	text-align: center;
 }
-#dudas{
+#dudas {
 	font-size: 1.728rem;
 }
 /* FIN COLABORAR */
