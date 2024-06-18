@@ -12,4 +12,5 @@ Pereyra: Donar (HTML y CSS), Error 404 (HTML y CSS) - Resolución 1920x1980 - Ed
 Pico: Perritos (HTML y CSS) - Resolución  1366x768 - Editor Dreamweaver.
 
 Figma: https://www.figma.com/design/GRTKGx2bf73SuBiF382IOK/G6---Fundaci%C3%B3n-Viva-la-Vida?node-id=228-23&t=u38OGOaJI6k6oG0E-1
+
 Página original que rediseñamos: https://www.fundacionvivalavida.com.ar/
