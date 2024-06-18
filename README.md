@@ -6,7 +6,7 @@ Por otro lado a medida que fuimos trabajando van apareciendo problemas o cosas r
 
 La distribución de tareas fue: 
 
-Belardo: Index (HTML y CSS)- Resolución  1366x768 - Editor Visual Studio Code.
+Belardo: Index (HTML y CSS), Versión mobile - Resolución  1366x768 - Editor Visual Studio Code.
 
 Díaz: Colaborar (HTML y CSS), Header y footer, Cohesión de estilos entre páginas, correciones generales en CSS y HTML- Resolución  1920x1080- Editor Dreamweaver.
 
