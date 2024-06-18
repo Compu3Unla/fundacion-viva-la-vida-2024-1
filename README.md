@@ -1,5 +1,5 @@
 Sobre el Trabajo:
-Se trata de el rediseño de una web para un refugio de perros. Para esta entrega presentamos la base de las páginas de Inicio, Perritos, Colaborar y Donar, además sumamos la página de error 404. La página que elegimos hacer responsive y mobile fue la de index. 
+Se trata de el rediseño de una web para un refugio de perros. Para la entrega final realizamos las páginas de Inicio, Perritos, Colaborar y Donar, además sumamos la página de error 404. La página que elegimos hacer responsive y mobile fue la de index. 
 
 La distribución de tareas fue: 
 
